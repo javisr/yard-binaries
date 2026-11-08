@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T13:04:15Z",
+  "generatedAt": "2026-11-08T13:11:03Z",
   "packages": [
     {
       "category": "web",
@@ -277,7 +277,7 @@
           ],
           "license": "GPL-2.0-only",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-11.8.3-sources.tar.gz",
           "version": "11.8.3"
         },
@@ -294,7 +294,7 @@
           ],
           "license": "GPL-2.0-only",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-10.11.14-sources.tar.gz",
           "version": "10.11.14"
         }
@@ -338,7 +338,7 @@
           ],
           "license": "AGPL-3.0-only",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/minio-RELEASE.2025-09-07-sources.tar.gz",
           "version": "RELEASE.2025-09-07"
         }
@@ -432,7 +432,7 @@
           ],
           "license": "BSD-2-Clause",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "1.28.0"
         }
       ]
@@ -756,7 +756,7 @@
           ],
           "license": "PostgreSQL",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "18.0"
         },
         {
@@ -772,7 +772,7 @@
           ],
           "license": "PostgreSQL",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "17.6"
         },
         {
@@ -788,7 +788,7 @@
           ],
           "license": "PostgreSQL",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "16.10"
         },
         {
@@ -804,7 +804,7 @@
           ],
           "license": "PostgreSQL",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "15.14"
         },
         {
@@ -820,7 +820,7 @@
           ],
           "license": "PostgreSQL",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "14.19"
         }
       ]
@@ -863,7 +863,7 @@
           ],
           "license": "SSPL-1.0",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/redis-7.4.5-sources.tar.gz",
           "version": "7.4.5"
         },
@@ -880,7 +880,7 @@
           ],
           "license": "BSD-3-Clause",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "7.0.15"
         }
       ]
@@ -1010,7 +1010,7 @@
           ],
           "license": "BSD-3-Clause",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "8.1.3"
         },
         {
@@ -1026,7 +1026,7 @@
           ],
           "license": "BSD-3-Clause",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "8.0.4"
         },
         {
@@ -1042,7 +1042,7 @@
           ],
           "license": "BSD-3-Clause",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "7.2.10"
         }
       ]
@@ -1065,7 +1065,7 @@
           ],
           "license": "LicenseRef-Xdebug-1.03",
           "minimumMacOS": "14.0",
-          "published": false,
+          "published": true,
           "version": "3.5.3"
         }
       ]
@@ -1093,6 +1093,6 @@
       ]
     }
   ],
-  "revision": 4,
+  "revision": 5,
   "schema": 1
 }

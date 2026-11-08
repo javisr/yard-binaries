@@ -83,7 +83,7 @@ generate the published inventory with a new revision and verify the remote files
 
 ```sh
 python3 scripts/vendor/download-manifest.py --release-dir dist/vendor-release \
-  --revision 5 --output V1 --base-url https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1 --published
+  --revision 6 --output V1 --base-url https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1 --published
 ```
 
 Provider files remain hosted by their original publishers. npm/Composer/Playwright resolve their
