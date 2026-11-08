@@ -1,0 +1,1177 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "url": "https://nginx.org/download/nginx-1.28.0.tar.gz",
+      "sha256": "c6b5c6b086c0df9d3ca3ff5e084c1d0ef909e6038279c71c1c3e985f576ff76a",
+      "id": "nginx-1.28.0",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.2/openssl-3.5.2.tar.gz",
+      "sha256": "c53a47e5e441c930c3928cf7bf6fb00e5d129b630e0aa873b08258656e7345ec",
+      "id": "openssl-3.5.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.gz",
+      "sha256": "0e138387df7835d7403b8351e2226c1377da804e0737db0e071b48f07c9d12ee",
+      "id": "pcre2-10.45",
+      "license": "BSD-3-Clause WITH PCRE2-exception"
+    },
+    {
+      "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "id": "zlib-1.3.1",
+      "license": "Zlib"
+    },
+    {
+      "url": "https://github.com/pgvector/pgvector/archive/refs/tags/v0.8.1.tar.gz",
+      "sha256": "a9094dfb85ccdde3cbb295f1086d4c71a20db1d26bf1d6c39f07a7d164033eb4",
+      "id": "pgvector-0.8.1",
+      "license": "PostgreSQL"
+    },
+    {
+      "url": "https://github.com/minio/minio/archive/refs/tags/RELEASE.2025-09-07T16-13-09Z.tar.gz",
+      "sha256": "c9598dcce3440977e79f787f2ba0e7e4d92c8d556bd51e7cef3785bafd6635f3",
+      "id": "minio-RELEASE.2025-09-07",
+      "license": "AGPL-3.0-only"
+    },
+    {
+      "url": "https://download.redis.io/releases/redis-7.4.5.tar.gz",
+      "sha256": "00bb280528f5d7934bec8ab309b8125088c209131e10609cb1563b91365633bb",
+      "id": "redis-7.4.5",
+      "license": "SSPL-1.0"
+    },
+    {
+      "url": "https://download.redis.io/releases/redis-7.0.15.tar.gz",
+      "sha256": "98066f5363504b26c34dd20fbcc3c957990d764cdf42576c836fc021073f4341",
+      "id": "redis-7.0.15",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "url": "https://github.com/valkey-io/valkey/archive/refs/tags/8.1.3.tar.gz",
+      "sha256": "8f862b3b0a72fd40587793964539589f6f83d01361ca1598b370cfaa301e0ec0",
+      "id": "valkey-8.1.3",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "url": "https://github.com/valkey-io/valkey/archive/refs/tags/8.0.4.tar.gz",
+      "sha256": "55c12a25f67ef19b615c76b6cb0c92d12753d76eb8d38b31d30e299c3490cdf2",
+      "id": "valkey-8.0.4",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "url": "https://github.com/valkey-io/valkey/archive/refs/tags/7.2.10.tar.gz",
+      "sha256": "33183dd5e5da8db745fbde4c1f041711310fbff6c6013ed8fb97ba28650ff832",
+      "id": "valkey-7.2.10",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "url": "https://archive.mariadb.org/mariadb-11.8.3/source/mariadb-11.8.3.tar.gz",
+      "sha256": "1014a85c768de8f9e9c6d4bf0b42617f3b1588be1ad371f71674ea32b87119c0",
+      "id": "mariadb-11.8.3",
+      "license": "GPL-2.0-only"
+    },
+    {
+      "url": "https://archive.mariadb.org/mariadb-10.11.14/source/mariadb-10.11.14.tar.gz",
+      "sha256": "8a571cb14fb1d4e3663d8e98f3d4200c042fc8b2a4aaaab495860dea8b7d052f",
+      "id": "mariadb-10.11.14",
+      "license": "GPL-2.0-only"
+    },
+    {
+      "url": "https://ftp.postgresql.org/pub/source/v18.0/postgresql-18.0.tar.gz",
+      "sha256": "30e97fc1f1594a7226580ea51080d3d883f4a0fb6ff716dbf7ad09e9f7e93ab2",
+      "id": "postgresql-18.0",
+      "license": "PostgreSQL"
+    },
+    {
+      "url": "https://ftp.postgresql.org/pub/source/v17.6/postgresql-17.6.tar.gz",
+      "sha256": "2910b85283674da2dae6ac13fe5ebbaaf3c482446396cba32e6728d3cc736d86",
+      "id": "postgresql-17.6",
+      "license": "PostgreSQL"
+    },
+    {
+      "url": "https://ftp.postgresql.org/pub/source/v16.10/postgresql-16.10.tar.gz",
+      "sha256": "91ede566d6c35db9617a619a5e015c985242144ad27fccae63d11c91cd8c3eed",
+      "id": "postgresql-16.10",
+      "license": "PostgreSQL"
+    },
+    {
+      "url": "https://ftp.postgresql.org/pub/source/v15.14/postgresql-15.14.tar.gz",
+      "sha256": "3bb652690e4a5057a4946b40f494f2f7816a5f83fc34fc7395845c326ded62d2",
+      "id": "postgresql-15.14",
+      "license": "PostgreSQL"
+    },
+    {
+      "url": "https://ftp.postgresql.org/pub/source/v14.19/postgresql-14.19.tar.gz",
+      "sha256": "b74021f0aa03a16ede379c4796368e20c989352b6c67403f3de41c250b26fad1",
+      "id": "postgresql-14.19",
+      "license": "PostgreSQL"
+    },
+    {
+      "id": "bison-3.8.2",
+      "url": "https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.gz",
+      "sha256": "06c9e13bdf7eb24d4ceb6b59205a4f67c2c7e7213119644430fe82fbd14a0abb",
+      "license": "GPL-3.0-or-later",
+      "build_tool_only": true
+    },
+    {
+      "id": "fmt-11.1.4",
+      "url": "https://github.com/fmtlib/fmt/archive/refs/tags/11.1.4.tar.gz",
+      "sha256": "ac366b7b4c2e9f0dde63a59b3feb5ee59b67974b14ee5dc9ea8ad78aa2c1ee1e",
+      "license": "MIT"
+    },
+    {
+      "id": "fmt-11.0.2",
+      "url": "https://github.com/fmtlib/fmt/archive/refs/tags/11.0.2.tar.gz",
+      "sha256": "6cb1e6d37bdcb756dbbe59be438790db409cdb4868c66e888d5df9f13f7c027f",
+      "license": "MIT"
+    },
+    {
+      "id": "gnutls-3.8.10",
+      "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.10.tar.xz",
+      "sha256": "db7fab7cce791e7727ebbef2334301c821d79a550ec55c9ef096b610b03eb6b7",
+      "license": "LGPL-2.1-or-later"
+    },
+    {
+      "id": "nettle-3.10.2",
+      "url": "https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz",
+      "sha256": "fe9ff51cb1f2abb5e65a6b8c10a92da0ab5ab6eaf26e7fc2b675c45f1fb519b5",
+      "license": "GPL-2.0-or-later"
+    },
+    {
+      "id": "gmp-6.3.0",
+      "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz",
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+      "license": "GPL-2.0-or-later"
+    },
+    {
+      "id": "pkgconf-2.4.3",
+      "url": "https://distfiles.ariadne.space/pkgconf/pkgconf-2.4.3.tar.xz",
+      "sha256": "51203d99ed573fa7344bf07ca626f10c7cc094e0846ac4aa0023bd0c83c25a41",
+      "license": "ISC",
+      "build_tool_only": true
+    },
+    {
+      "id": "php-8.4.23",
+      "url": "https://www.php.net/distributions/php-8.4.23.tar.xz",
+      "sha256": "1ab9f52008414e43bb2427ffa288eff2a4de39e1a830f957e800ba368d887a72",
+      "license": "PHP-3.01"
+    },
+    {
+      "id": "xdebug-3.5.3",
+      "url": "https://xdebug.org/files/xdebug-3.5.3.tgz",
+      "sha256": "f073de91bea046106abf4d6071c963ea71e58571df6ce58948ceca89d121cb2d",
+      "license": "LicenseRef-Xdebug-1.03"
+    }
+  ],
+  "products": [
+    {
+      "id": "nginx-1.28.0",
+      "type": "nginx",
+      "version": "1.28.0",
+      "license": "BSD-2-Clause",
+      "sources": [
+        "nginx-1.28.0",
+        "openssl-3.5.2",
+        "pcre2-10.45",
+        "zlib-1.3.1"
+      ],
+      "payload": "bin/nginx",
+      "components": [
+        {
+          "name": "nginx-1.28.0",
+          "license": "BSD-2-Clause",
+          "source": "nginx-1.28.0"
+        },
+        {
+          "name": "openssl-3.5.2",
+          "license": "Apache-2.0",
+          "source": "openssl-3.5.2"
+        },
+        {
+          "name": "pcre2-10.45",
+          "license": "BSD-3-Clause WITH PCRE2-exception",
+          "source": "pcre2-10.45"
+        },
+        {
+          "name": "zlib-1.3.1",
+          "license": "Zlib",
+          "source": "zlib-1.3.1"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "redis-7.4.5",
+      "type": "redis",
+      "version": "7.4.5",
+      "license": "SSPL-1.0",
+      "sources": [
+        "redis-7.4.5"
+      ],
+      "payload": "services/redis/7.4.5",
+      "components": [
+        {
+          "name": "redis-7.4.5",
+          "license": "SSPL-1.0",
+          "source": "redis-7.4.5"
+        },
+        {
+          "name": "hiredis",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.4.5",
+          "evidence": "deps/hiredis/COPYING"
+        },
+        {
+          "name": "Lua 5.1",
+          "license": "MIT",
+          "source": "redis-7.4.5",
+          "evidence": "deps/lua/COPYRIGHT"
+        },
+        {
+          "name": "linenoise",
+          "license": "BSD-2-Clause",
+          "source": "redis-7.4.5",
+          "evidence": "deps/linenoise/linenoise.c"
+        },
+        {
+          "name": "HdrHistogram",
+          "license": "CC0-1.0",
+          "source": "redis-7.4.5",
+          "evidence": "deps/hdr_histogram/COPYING.txt"
+        },
+        {
+          "name": "Lua CJSON",
+          "license": "MIT",
+          "source": "redis-7.4.5",
+          "evidence": "deps/lua/src/lua_cjson.c"
+        },
+        {
+          "name": "Lua struct",
+          "license": "MIT",
+          "source": "redis-7.4.5",
+          "evidence": "deps/lua/src/lua_struct.c"
+        },
+        {
+          "name": "Lua MessagePack",
+          "license": "MIT",
+          "source": "redis-7.4.5",
+          "evidence": "deps/lua/src/lua_cmsgpack.c"
+        },
+        {
+          "name": "liblzf",
+          "license": "BSD-2-Clause",
+          "source": "redis-7.4.5",
+          "evidence": "src/lzfP.h"
+        },
+        {
+          "name": "SHA-1",
+          "license": "LicenseRef-SHA1-Public-Domain",
+          "source": "redis-7.4.5",
+          "evidence": "src/sha1.c"
+        },
+        {
+          "name": "SipHash",
+          "license": "CC0-1.0",
+          "source": "redis-7.4.5",
+          "evidence": "src/siphash.c"
+        },
+        {
+          "name": "Redis inherited code",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.4.5",
+          "evidence": "REDISCONTRIBUTIONS.txt"
+        },
+        {
+          "name": "fpconv",
+          "license": "BSL-1.0",
+          "source": "redis-7.4.5",
+          "evidence": "deps/fpconv/LICENSE.txt"
+        },
+        {
+          "name": "Lua fpconv",
+          "license": "MIT",
+          "source": "redis-7.4.5",
+          "evidence": "deps/lua/src/fpconv.c"
+        },
+        {
+          "name": "geohash",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.4.5",
+          "evidence": "src/geohash.c"
+        },
+        {
+          "name": "CRC16",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.4.5",
+          "evidence": "src/crc16.c"
+        },
+        {
+          "name": "CRC64",
+          "license": "BSD-2-Clause",
+          "source": "redis-7.4.5",
+          "evidence": "src/crc64.c"
+        }
+      ],
+      "source_required": true
+    },
+    {
+      "id": "redis-7.0.15",
+      "type": "redis",
+      "version": "7.0.15",
+      "license": "BSD-3-Clause",
+      "sources": [
+        "redis-7.0.15"
+      ],
+      "payload": "services/redis/7.0.15",
+      "components": [
+        {
+          "name": "redis-7.0.15",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.0.15"
+        },
+        {
+          "name": "hiredis",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.0.15",
+          "evidence": "deps/hiredis/COPYING"
+        },
+        {
+          "name": "Lua 5.1",
+          "license": "MIT",
+          "source": "redis-7.0.15",
+          "evidence": "deps/lua/COPYRIGHT"
+        },
+        {
+          "name": "linenoise",
+          "license": "BSD-2-Clause",
+          "source": "redis-7.0.15",
+          "evidence": "deps/linenoise/linenoise.c"
+        },
+        {
+          "name": "HdrHistogram",
+          "license": "CC0-1.0",
+          "source": "redis-7.0.15",
+          "evidence": "deps/hdr_histogram/COPYING.txt"
+        },
+        {
+          "name": "Lua CJSON",
+          "license": "MIT",
+          "source": "redis-7.0.15",
+          "evidence": "deps/lua/src/lua_cjson.c"
+        },
+        {
+          "name": "Lua struct",
+          "license": "MIT",
+          "source": "redis-7.0.15",
+          "evidence": "deps/lua/src/lua_struct.c"
+        },
+        {
+          "name": "Lua MessagePack",
+          "license": "MIT",
+          "source": "redis-7.0.15",
+          "evidence": "deps/lua/src/lua_cmsgpack.c"
+        },
+        {
+          "name": "liblzf",
+          "license": "BSD-2-Clause",
+          "source": "redis-7.0.15",
+          "evidence": "src/lzfP.h"
+        },
+        {
+          "name": "SHA-1",
+          "license": "LicenseRef-SHA1-Public-Domain",
+          "source": "redis-7.0.15",
+          "evidence": "src/sha1.c"
+        },
+        {
+          "name": "SipHash",
+          "license": "CC0-1.0",
+          "source": "redis-7.0.15",
+          "evidence": "src/siphash.c"
+        },
+        {
+          "name": "Redis inherited code",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.0.15",
+          "evidence": "COPYING"
+        },
+        {
+          "name": "Lua fpconv",
+          "license": "MIT",
+          "source": "redis-7.0.15",
+          "evidence": "deps/lua/src/fpconv.c"
+        },
+        {
+          "name": "geohash",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.0.15",
+          "evidence": "src/geohash.c"
+        },
+        {
+          "name": "CRC16",
+          "license": "BSD-3-Clause",
+          "source": "redis-7.0.15",
+          "evidence": "src/crc16.c"
+        },
+        {
+          "name": "CRC64",
+          "license": "BSD-2-Clause",
+          "source": "redis-7.0.15",
+          "evidence": "src/crc64.c"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "valkey-8.1.3",
+      "type": "valkey",
+      "version": "8.1.3",
+      "license": "BSD-3-Clause",
+      "sources": [
+        "valkey-8.1.3"
+      ],
+      "payload": "services/valkey/8.1.3",
+      "components": [
+        {
+          "name": "valkey-8.1.3",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.1.3"
+        },
+        {
+          "name": "hiredis",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/hiredis/COPYING"
+        },
+        {
+          "name": "Lua 5.1",
+          "license": "MIT",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/lua/COPYRIGHT"
+        },
+        {
+          "name": "linenoise",
+          "license": "BSD-2-Clause",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/linenoise/linenoise.c"
+        },
+        {
+          "name": "HdrHistogram",
+          "license": "CC0-1.0",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/hdr_histogram/COPYING.txt"
+        },
+        {
+          "name": "Lua CJSON",
+          "license": "MIT",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/lua/src/lua_cjson.c"
+        },
+        {
+          "name": "Lua struct",
+          "license": "MIT",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/lua/src/lua_struct.c"
+        },
+        {
+          "name": "Lua MessagePack",
+          "license": "MIT",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/lua/src/lua_cmsgpack.c"
+        },
+        {
+          "name": "liblzf",
+          "license": "BSD-2-Clause",
+          "source": "valkey-8.1.3",
+          "evidence": "src/lzfP.h"
+        },
+        {
+          "name": "SHA-1",
+          "license": "LicenseRef-SHA1-Public-Domain",
+          "source": "valkey-8.1.3",
+          "evidence": "src/sha1.c"
+        },
+        {
+          "name": "SipHash",
+          "license": "CC0-1.0",
+          "source": "valkey-8.1.3",
+          "evidence": "src/siphash.c"
+        },
+        {
+          "name": "Redis inherited code",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.1.3",
+          "evidence": "COPYING"
+        },
+        {
+          "name": "fpconv",
+          "license": "BSL-1.0",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/fpconv/LICENSE.txt"
+        },
+        {
+          "name": "Lua fpconv",
+          "license": "MIT",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/lua/src/fpconv.c"
+        },
+        {
+          "name": "geohash",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.1.3",
+          "evidence": "src/geohash.c"
+        },
+        {
+          "name": "CRC16",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.1.3",
+          "evidence": "src/crc16.c"
+        },
+        {
+          "name": "CRC64",
+          "license": "BSD-2-Clause",
+          "source": "valkey-8.1.3",
+          "evidence": "src/crc64.c"
+        },
+        {
+          "name": "fast_float",
+          "license": "MIT",
+          "source": "valkey-8.1.3",
+          "evidence": "deps/fast_float/fast_float.h"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "valkey-8.0.4",
+      "type": "valkey",
+      "version": "8.0.4",
+      "license": "BSD-3-Clause",
+      "sources": [
+        "valkey-8.0.4"
+      ],
+      "payload": "services/valkey/8.0.4",
+      "components": [
+        {
+          "name": "valkey-8.0.4",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.0.4"
+        },
+        {
+          "name": "hiredis",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/hiredis/COPYING"
+        },
+        {
+          "name": "Lua 5.1",
+          "license": "MIT",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/lua/COPYRIGHT"
+        },
+        {
+          "name": "linenoise",
+          "license": "BSD-2-Clause",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/linenoise/linenoise.c"
+        },
+        {
+          "name": "HdrHistogram",
+          "license": "CC0-1.0",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/hdr_histogram/COPYING.txt"
+        },
+        {
+          "name": "Lua CJSON",
+          "license": "MIT",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/lua/src/lua_cjson.c"
+        },
+        {
+          "name": "Lua struct",
+          "license": "MIT",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/lua/src/lua_struct.c"
+        },
+        {
+          "name": "Lua MessagePack",
+          "license": "MIT",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/lua/src/lua_cmsgpack.c"
+        },
+        {
+          "name": "liblzf",
+          "license": "BSD-2-Clause",
+          "source": "valkey-8.0.4",
+          "evidence": "src/lzfP.h"
+        },
+        {
+          "name": "SHA-1",
+          "license": "LicenseRef-SHA1-Public-Domain",
+          "source": "valkey-8.0.4",
+          "evidence": "src/sha1.c"
+        },
+        {
+          "name": "SipHash",
+          "license": "CC0-1.0",
+          "source": "valkey-8.0.4",
+          "evidence": "src/siphash.c"
+        },
+        {
+          "name": "Redis inherited code",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.0.4",
+          "evidence": "COPYING"
+        },
+        {
+          "name": "fpconv",
+          "license": "BSL-1.0",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/fpconv/LICENSE.txt"
+        },
+        {
+          "name": "Lua fpconv",
+          "license": "MIT",
+          "source": "valkey-8.0.4",
+          "evidence": "deps/lua/src/fpconv.c"
+        },
+        {
+          "name": "geohash",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.0.4",
+          "evidence": "src/geohash.c"
+        },
+        {
+          "name": "CRC16",
+          "license": "BSD-3-Clause",
+          "source": "valkey-8.0.4",
+          "evidence": "src/crc16.c"
+        },
+        {
+          "name": "CRC64",
+          "license": "BSD-2-Clause",
+          "source": "valkey-8.0.4",
+          "evidence": "src/crc64.c"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "valkey-7.2.10",
+      "type": "valkey",
+      "version": "7.2.10",
+      "license": "BSD-3-Clause",
+      "sources": [
+        "valkey-7.2.10"
+      ],
+      "payload": "services/valkey/7.2.10",
+      "components": [
+        {
+          "name": "valkey-7.2.10",
+          "license": "BSD-3-Clause",
+          "source": "valkey-7.2.10"
+        },
+        {
+          "name": "hiredis",
+          "license": "BSD-3-Clause",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/hiredis/COPYING"
+        },
+        {
+          "name": "Lua 5.1",
+          "license": "MIT",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/lua/COPYRIGHT"
+        },
+        {
+          "name": "linenoise",
+          "license": "BSD-2-Clause",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/linenoise/linenoise.c"
+        },
+        {
+          "name": "HdrHistogram",
+          "license": "CC0-1.0",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/hdr_histogram/COPYING.txt"
+        },
+        {
+          "name": "Lua CJSON",
+          "license": "MIT",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/lua/src/lua_cjson.c"
+        },
+        {
+          "name": "Lua struct",
+          "license": "MIT",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/lua/src/lua_struct.c"
+        },
+        {
+          "name": "Lua MessagePack",
+          "license": "MIT",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/lua/src/lua_cmsgpack.c"
+        },
+        {
+          "name": "liblzf",
+          "license": "BSD-2-Clause",
+          "source": "valkey-7.2.10",
+          "evidence": "src/lzfP.h"
+        },
+        {
+          "name": "SHA-1",
+          "license": "LicenseRef-SHA1-Public-Domain",
+          "source": "valkey-7.2.10",
+          "evidence": "src/sha1.c"
+        },
+        {
+          "name": "SipHash",
+          "license": "CC0-1.0",
+          "source": "valkey-7.2.10",
+          "evidence": "src/siphash.c"
+        },
+        {
+          "name": "Redis inherited code",
+          "license": "BSD-3-Clause",
+          "source": "valkey-7.2.10",
+          "evidence": "COPYING"
+        },
+        {
+          "name": "fpconv",
+          "license": "BSL-1.0",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/fpconv/LICENSE.txt"
+        },
+        {
+          "name": "Lua fpconv",
+          "license": "MIT",
+          "source": "valkey-7.2.10",
+          "evidence": "deps/lua/src/fpconv.c"
+        },
+        {
+          "name": "geohash",
+          "license": "BSD-3-Clause",
+          "source": "valkey-7.2.10",
+          "evidence": "src/geohash.c"
+        },
+        {
+          "name": "CRC16",
+          "license": "BSD-3-Clause",
+          "source": "valkey-7.2.10",
+          "evidence": "src/crc16.c"
+        },
+        {
+          "name": "CRC64",
+          "license": "BSD-2-Clause",
+          "source": "valkey-7.2.10",
+          "evidence": "src/crc64.c"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "mariadb-11.8.3",
+      "type": "mariadb",
+      "version": "11.8.3",
+      "license": "GPL-2.0-only",
+      "sources": [
+        "mariadb-11.8.3",
+        "pcre2-10.45",
+        "fmt-11.1.4",
+        "gnutls-3.8.10",
+        "nettle-3.10.2",
+        "gmp-6.3.0"
+      ],
+      "payload": "services/mariadb/11.8.3",
+      "components": [
+        {
+          "name": "mariadb-11.8.3",
+          "license": "GPL-2.0-only",
+          "source": "mariadb-11.8.3"
+        },
+        {
+          "name": "pcre2-10.45",
+          "license": "BSD-3-Clause WITH PCRE2-exception",
+          "source": "pcre2-10.45"
+        },
+        {
+          "name": "MariaDB Connector/C",
+          "license": "LGPL-2.1-or-later",
+          "source": "mariadb-11.8.3",
+          "evidence": "libmariadb/COPYING.LIB"
+        },
+        {
+          "name": "fmt-11.1.4",
+          "license": "MIT",
+          "source": "fmt-11.1.4",
+          "evidence": "LICENSE"
+        },
+        {
+          "name": "zlib",
+          "license": "Zlib",
+          "source": "mariadb-11.8.3",
+          "evidence": "zlib/zlib.h"
+        },
+        {
+          "name": "libedit",
+          "license": "BSD-3-Clause",
+          "source": "mariadb-11.8.3",
+          "evidence": "THIRDPARTY"
+        },
+        {
+          "name": "generated parser",
+          "license": "GPL-3.0-or-later WITH Bison-exception-2.2",
+          "source": "mariadb-11.8.3",
+          "evidence": "THIRDPARTY"
+        },
+        {
+          "name": "wolfSSL 5.8.0",
+          "license": "GPL-2.0-or-later",
+          "source": "mariadb-11.8.3",
+          "evidence": "extra/wolfssl/wolfssl/COPYING"
+        },
+        {
+          "name": "GnuTLS 3.8.10",
+          "license": "LGPL-2.1-or-later",
+          "source": "gnutls-3.8.10",
+          "evidence": "COPYING.LESSERv2"
+        },
+        {
+          "name": "Nettle 3.10.2",
+          "license": "GPL-2.0-or-later",
+          "source": "nettle-3.10.2",
+          "evidence": "COPYINGv2"
+        },
+        {
+          "name": "GMP 6.3.0",
+          "license": "GPL-2.0-or-later",
+          "source": "gmp-6.3.0",
+          "evidence": "COPYINGv2"
+        },
+        {
+          "name": "libtasn1 and gnulib/unistring subset",
+          "license": "LGPL-2.1-or-later AND LicenseRef-Gnulib-Notices",
+          "source": "gnutls-3.8.10",
+          "evidence": "COPYING"
+        }
+      ],
+      "source_required": true
+    },
+    {
+      "id": "mariadb-10.11.14",
+      "type": "mariadb",
+      "version": "10.11.14",
+      "license": "GPL-2.0-only",
+      "sources": [
+        "mariadb-10.11.14",
+        "pcre2-10.45",
+        "fmt-11.0.2",
+        "gnutls-3.8.10",
+        "nettle-3.10.2",
+        "gmp-6.3.0"
+      ],
+      "payload": "services/mariadb/10.11.14",
+      "components": [
+        {
+          "name": "mariadb-10.11.14",
+          "license": "GPL-2.0-only",
+          "source": "mariadb-10.11.14"
+        },
+        {
+          "name": "pcre2-10.45",
+          "license": "BSD-3-Clause WITH PCRE2-exception",
+          "source": "pcre2-10.45"
+        },
+        {
+          "name": "MariaDB Connector/C",
+          "license": "LGPL-2.1-or-later",
+          "source": "mariadb-10.11.14",
+          "evidence": "libmariadb/COPYING.LIB"
+        },
+        {
+          "name": "fmt-11.0.2",
+          "license": "MIT",
+          "source": "fmt-11.0.2",
+          "evidence": "LICENSE"
+        },
+        {
+          "name": "zlib",
+          "license": "Zlib",
+          "source": "mariadb-10.11.14",
+          "evidence": "zlib/zlib.h"
+        },
+        {
+          "name": "libedit",
+          "license": "BSD-3-Clause",
+          "source": "mariadb-10.11.14",
+          "evidence": "THIRDPARTY"
+        },
+        {
+          "name": "generated parser",
+          "license": "GPL-3.0-or-later WITH Bison-exception-2.2",
+          "source": "mariadb-10.11.14",
+          "evidence": "THIRDPARTY"
+        },
+        {
+          "name": "wolfSSL 5.8.0",
+          "license": "GPL-2.0-or-later",
+          "source": "mariadb-10.11.14",
+          "evidence": "extra/wolfssl/wolfssl/COPYING"
+        },
+        {
+          "name": "GnuTLS 3.8.10",
+          "license": "LGPL-2.1-or-later",
+          "source": "gnutls-3.8.10",
+          "evidence": "COPYING.LESSERv2"
+        },
+        {
+          "name": "Nettle 3.10.2",
+          "license": "GPL-2.0-or-later",
+          "source": "nettle-3.10.2",
+          "evidence": "COPYINGv2"
+        },
+        {
+          "name": "GMP 6.3.0",
+          "license": "GPL-2.0-or-later",
+          "source": "gmp-6.3.0",
+          "evidence": "COPYINGv2"
+        },
+        {
+          "name": "libtasn1 and gnulib/unistring subset",
+          "license": "LGPL-2.1-or-later AND LicenseRef-Gnulib-Notices",
+          "source": "gnutls-3.8.10",
+          "evidence": "COPYING"
+        }
+      ],
+      "source_required": true
+    },
+    {
+      "id": "postgresql-18.0",
+      "type": "postgresql",
+      "version": "18.0",
+      "license": "PostgreSQL",
+      "sources": [
+        "postgresql-18.0",
+        "openssl-3.5.2",
+        "pgvector-0.8.1"
+      ],
+      "payload": "services/postgresql/18.0",
+      "components": [
+        {
+          "name": "postgresql-18.0",
+          "license": "PostgreSQL",
+          "source": "postgresql-18.0"
+        },
+        {
+          "name": "openssl-3.5.2",
+          "license": "Apache-2.0",
+          "source": "openssl-3.5.2"
+        },
+        {
+          "name": "pgvector-0.8.1",
+          "license": "PostgreSQL",
+          "source": "pgvector-0.8.1"
+        },
+        {
+          "name": "PostgreSQL regex engine and imported code",
+          "license": "LicenseRef-PostgreSQL-Third-Party",
+          "source": "postgresql-18.0",
+          "evidence": "src/backend/regex/COPYRIGHT"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "postgresql-17.6",
+      "type": "postgresql",
+      "version": "17.6",
+      "license": "PostgreSQL",
+      "sources": [
+        "postgresql-17.6",
+        "openssl-3.5.2",
+        "pgvector-0.8.1"
+      ],
+      "payload": "services/postgresql/17.6",
+      "components": [
+        {
+          "name": "postgresql-17.6",
+          "license": "PostgreSQL",
+          "source": "postgresql-17.6"
+        },
+        {
+          "name": "openssl-3.5.2",
+          "license": "Apache-2.0",
+          "source": "openssl-3.5.2"
+        },
+        {
+          "name": "pgvector-0.8.1",
+          "license": "PostgreSQL",
+          "source": "pgvector-0.8.1"
+        },
+        {
+          "name": "PostgreSQL regex engine and imported code",
+          "license": "LicenseRef-PostgreSQL-Third-Party",
+          "source": "postgresql-17.6",
+          "evidence": "src/backend/regex/COPYRIGHT"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "postgresql-16.10",
+      "type": "postgresql",
+      "version": "16.10",
+      "license": "PostgreSQL",
+      "sources": [
+        "postgresql-16.10",
+        "openssl-3.5.2",
+        "pgvector-0.8.1"
+      ],
+      "payload": "services/postgresql/16.10",
+      "components": [
+        {
+          "name": "postgresql-16.10",
+          "license": "PostgreSQL",
+          "source": "postgresql-16.10"
+        },
+        {
+          "name": "openssl-3.5.2",
+          "license": "Apache-2.0",
+          "source": "openssl-3.5.2"
+        },
+        {
+          "name": "pgvector-0.8.1",
+          "license": "PostgreSQL",
+          "source": "pgvector-0.8.1"
+        },
+        {
+          "name": "PostgreSQL regex engine and imported code",
+          "license": "LicenseRef-PostgreSQL-Third-Party",
+          "source": "postgresql-16.10",
+          "evidence": "src/backend/regex/COPYRIGHT"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "postgresql-15.14",
+      "type": "postgresql",
+      "version": "15.14",
+      "license": "PostgreSQL",
+      "sources": [
+        "postgresql-15.14",
+        "openssl-3.5.2",
+        "pgvector-0.8.1"
+      ],
+      "payload": "services/postgresql/15.14",
+      "components": [
+        {
+          "name": "postgresql-15.14",
+          "license": "PostgreSQL",
+          "source": "postgresql-15.14"
+        },
+        {
+          "name": "openssl-3.5.2",
+          "license": "Apache-2.0",
+          "source": "openssl-3.5.2"
+        },
+        {
+          "name": "pgvector-0.8.1",
+          "license": "PostgreSQL",
+          "source": "pgvector-0.8.1"
+        },
+        {
+          "name": "PostgreSQL regex engine and imported code",
+          "license": "LicenseRef-PostgreSQL-Third-Party",
+          "source": "postgresql-15.14",
+          "evidence": "src/backend/regex/COPYRIGHT"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "postgresql-14.19",
+      "type": "postgresql",
+      "version": "14.19",
+      "license": "PostgreSQL",
+      "sources": [
+        "postgresql-14.19",
+        "openssl-3.5.2",
+        "pgvector-0.8.1"
+      ],
+      "payload": "services/postgresql/14.19",
+      "components": [
+        {
+          "name": "postgresql-14.19",
+          "license": "PostgreSQL",
+          "source": "postgresql-14.19"
+        },
+        {
+          "name": "openssl-3.5.2",
+          "license": "Apache-2.0",
+          "source": "openssl-3.5.2"
+        },
+        {
+          "name": "pgvector-0.8.1",
+          "license": "PostgreSQL",
+          "source": "pgvector-0.8.1"
+        },
+        {
+          "name": "PostgreSQL regex engine and imported code",
+          "license": "LicenseRef-PostgreSQL-Third-Party",
+          "source": "postgresql-14.19",
+          "evidence": "src/backend/regex/COPYRIGHT"
+        }
+      ],
+      "source_required": false
+    },
+    {
+      "id": "minio-RELEASE.2025-09-07",
+      "type": "minio",
+      "version": "RELEASE.2025-09-07",
+      "license": "AGPL-3.0-only",
+      "sources": [
+        "minio-RELEASE.2025-09-07"
+      ],
+      "payload": "services/minio/RELEASE.2025-09-07",
+      "components": [
+        {
+          "name": "minio-RELEASE.2025-09-07",
+          "license": "AGPL-3.0-only",
+          "source": "minio-RELEASE.2025-09-07"
+        }
+      ],
+      "source_required": true
+    },
+    {
+      "id": "xdebug-3.5.3",
+      "type": "xdebug",
+      "version": "3.5.3",
+      "license": "LicenseRef-Xdebug-1.03",
+      "payload": "php-extensions/xdebug/8.4",
+      "sources": [
+        "xdebug-3.5.3",
+        "php-8.4.23"
+      ],
+      "components": [
+        {
+          "name": "Xdebug 3.5.3",
+          "license": "LicenseRef-Xdebug-1.03",
+          "source": "xdebug-3.5.3",
+          "evidence": "LICENSE"
+        },
+        {
+          "name": "PHP 8.4.23 SDK and imported PHP code",
+          "license": "PHP-3.01",
+          "source": "php-8.4.23",
+          "evidence": "LICENSE"
+        }
+      ],
+      "source_required": false
+    }
+  ]
+}

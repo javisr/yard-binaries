@@ -1,0 +1,824 @@
+{
+  "schema": 1,
+  "packages": [
+    {
+      "id": "adminer",
+      "name": "AdminerEvo",
+      "category": "web",
+      "releases": [
+        {
+          "version": "4.8.4",
+          "published": true,
+          "downloads": [
+            {
+              "role": "web",
+              "url": "https://github.com/adminerevo/adminerevo/releases/download/v4.8.4/adminer-4.8.4.php",
+              "format": "php",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bun",
+      "name": "bun",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "1.4.4",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip",
+              "format": "zip",
+              "architecture": "arm64",
+              "sha256": "c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc510"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chromium",
+      "name": "chromium",
+      "category": "browser",
+      "releases": [
+        {
+          "version": "156.0.8078.4",
+          "published": true,
+          "minimumMacOS": "14.0",
+          "downloads": [
+            {
+              "role": "browser",
+              "url": "https://cdn.playwright.dev/builds/cft/156.0.8078.4/mac-arm64/chrome-mac-arm64.zip",
+              "format": "zip",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chromium-headless-shell",
+      "name": "chromium-headless-shell",
+      "category": "browser",
+      "releases": [
+        {
+          "version": "156.0.8078.4",
+          "published": true,
+          "minimumMacOS": "14.0",
+          "downloads": [
+            {
+              "role": "browser",
+              "url": "https://cdn.playwright.dev/builds/cft/156.0.8078.4/mac-arm64/chrome-headless-shell-mac-arm64.zip",
+              "format": "zip",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "claude",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "2.1.316",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://downloads.claude.ai/claude-code-releases/2.1.316/darwin-arm64/claude",
+              "format": "binary",
+              "architecture": "arm64",
+              "sha256": "64c327e92b2c5e0f78c0a980c5a518121e1f0d140ca771ca5dd4488d1a2dcb3f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "codex",
+      "name": "Codex",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "0.166.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-aarch64-apple-darwin.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "sha256": "c48824462fc57681eafb0925d97b11b589010475613904f570b42fea53e240d5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "codex-code-mode-host",
+      "name": "codex-code-mode-host",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "0.166.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-code-mode-host-aarch64-apple-darwin.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "sha256": "7abd50fe5f033495a7b693c45fb82dc57093a18f1c4ba3e8043577de46c5c7c5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "composer",
+      "name": "Composer",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "2.11.1",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://getcomposer.org/download/2.11.1/composer.phar",
+              "format": "phar",
+              "architecture": "arm64"
+            }
+          ],
+          "license": "MIT"
+        }
+      ]
+    },
+    {
+      "id": "expose",
+      "name": "Expose",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "upstream",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/beyondcode/expose/raw/master/builds/expose",
+              "format": "phar",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ffmpeg",
+      "name": "ffmpeg",
+      "category": "browser",
+      "releases": [
+        {
+          "version": "1013",
+          "published": true,
+          "minimumMacOS": "14.0",
+          "downloads": [
+            {
+              "role": "browser",
+              "url": "https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-mac-arm64.zip",
+              "format": "zip",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fsevents",
+      "name": "fsevents",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "2.3.2",
+          "published": true,
+          "license": "MIT",
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz",
+              "format": "npm",
+              "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gh",
+      "name": "gh",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "2.103.3",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/cli/cli/releases/download/v2.103.3/gh_2.103.3_macOS_arm64.zip",
+              "format": "zip",
+              "architecture": "arm64",
+              "sha256": "d700207eae9ae98fe2b89535c2c087c07823d4628c56364695a5a07ef311c062"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "laravel-installer",
+      "name": "laravel/installer",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "5.32.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://api.github.com/repos/laravel/installer/zipball/6d47ce9f44a42da0d06d50acdfa80f8c9b13c8c3",
+              "format": "composer",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ],
+      "providerURL": "https://repo.packagist.org/p2/laravel/installer.json"
+    },
+    {
+      "id": "meilisearch",
+      "name": "meilisearch",
+      "category": "service",
+      "releases": [
+        {
+          "version": "1.16.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://github.com/meilisearch/meilisearch/releases/download/v1.16.0/meilisearch-macos-apple-silicon",
+              "format": "binary",
+              "architecture": "arm64"
+            }
+          ],
+          "minimumMacOS": "14.0"
+        }
+      ]
+    },
+    {
+      "id": "mongodb",
+      "name": "mongodb",
+      "category": "service",
+      "releases": [
+        {
+          "version": "7.0.21",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-7.0.21.tgz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "stripComponents": 1
+            }
+          ],
+          "minimumMacOS": "14.0"
+        }
+      ]
+    },
+    {
+      "id": "mysql",
+      "name": "mysql",
+      "category": "service",
+      "releases": [
+        {
+          "version": "9.4.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://cdn.mysql.com/archives/mysql-9.4/mysql-9.4.0-macos15-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "stripComponents": 1
+            }
+          ],
+          "minimumMacOS": "15.0"
+        },
+        {
+          "version": "8.4.6",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://cdn.mysql.com/archives/mysql-8.4/mysql-8.4.6-macos15-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "stripComponents": 1
+            }
+          ],
+          "minimumMacOS": "15.0"
+        },
+        {
+          "version": "8.0.43",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.43-macos15-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "stripComponents": 1
+            }
+          ],
+          "minimumMacOS": "15.0"
+        }
+      ]
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "category": "runtime",
+      "releases": [
+        {
+          "version": "24.22.2",
+          "published": true,
+          "downloads": [
+            {
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v24.22.2/node-v24.22.2-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "22.23.4",
+          "published": true,
+          "downloads": [
+            {
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v22.23.4/node-v22.23.4-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "20.20.2",
+          "published": true,
+          "downloads": [
+            {
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v20.20.2/node-v20.20.2-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "18.20.8",
+          "published": true,
+          "downloads": [
+            {
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v18.20.8/node-v18.20.8-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "16.20.2",
+          "published": true,
+          "downloads": [
+            {
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v16.20.2/node-v16.20.2-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ],
+      "providerURL": "https://nodejs.org/dist/index.json"
+    },
+    {
+      "id": "nvm",
+      "name": "nvm",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "0.40.3",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/nvm-sh/nvm/archive/refs/tags/v0.40.3.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ],
+          "license": "MIT"
+        }
+      ]
+    },
+    {
+      "id": "opencode",
+      "name": "opencode",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "1.19.5",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/anomalyco/opencode/releases/download/v1.19.5/opencode-darwin-arm64.zip",
+              "format": "zip",
+              "architecture": "arm64",
+              "sha256": "c1c9e62521192192ef4c3ed1355ada2144055bddb61682217e997b03c55203c1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "runtime",
+      "releases": [
+        {
+          "version": "8.5.8",
+          "published": true,
+          "downloads": [
+            {
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-cli-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            },
+            {
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-fpm-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "8.4.23",
+          "published": true,
+          "downloads": [
+            {
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.23-cli-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            },
+            {
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.23-fpm-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "8.3.32",
+          "published": true,
+          "downloads": [
+            {
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.3.32-cli-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            },
+            {
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.3.32-fpm-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "8.2.32",
+          "published": true,
+          "downloads": [
+            {
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.2.32-cli-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            },
+            {
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.2.32-fpm-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "8.1.34",
+          "published": true,
+          "downloads": [
+            {
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.1.34-cli-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            },
+            {
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.1.34-fpm-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        },
+        {
+          "version": "8.0.30",
+          "published": true,
+          "downloads": [
+            {
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.0.30-cli-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            },
+            {
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.0.30-fpm-macos-aarch64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ],
+      "providerURL": "https://dl.static-php.dev/static-php-cli/bulk/?format=json"
+    },
+    {
+      "id": "playwright",
+      "name": "playwright",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "1.64.1",
+          "published": true,
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://registry.npmjs.org/playwright/-/playwright-1.64.1.tgz",
+              "format": "npm",
+              "architecture": "arm64",
+              "integrity": "sha512-HCrVhHr5QQuwYoswEUGTb7gGp522yflbv/ST8nF4sFWGuLjQCt17Q/EubpGGSNKYn1tsTCPZxqHhHCfVURu7UA=="
+            }
+          ],
+          "license": "Apache-2.0"
+        }
+      ],
+      "providerURL": "https://registry.npmjs.org/playwright"
+    },
+    {
+      "id": "playwright-core",
+      "name": "Playwright core",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "1.64.1",
+          "published": true,
+          "license": "Apache-2.0",
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.64.1.tgz",
+              "format": "npm",
+              "integrity": "sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ=="
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pnpm",
+      "name": "pnpm",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "12.18.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://registry.npmjs.org/pnpm/-/pnpm-12.18.0.tgz",
+              "format": "npm",
+              "architecture": "arm64",
+              "integrity": "sha512-nXiC1dyCFH7PxOBiqjSDTgrQKWcQoYN6ERWuASEn02txCeMhrBWYod0KZVl2gbHpmRfhLtDXSerpEYeUM2O+sw=="
+            }
+          ],
+          "license": "MIT"
+        },
+        {
+          "version": "12.16.1",
+          "published": true,
+          "license": "MIT",
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://registry.npmjs.org/pnpm/-/pnpm-12.16.1.tgz",
+              "format": "npm",
+              "integrity": "sha512-CR0d7nknV1Zhsl2rPCrjHK/BxU1rce1qZgDPDByxBDSkR+rhQBXxsj4ua+3u1535SpMuIWTSgyKA3OP7MvZW0Q=="
+            }
+          ]
+        }
+      ],
+      "providerURL": "https://registry.npmjs.org/pnpm"
+    },
+    {
+      "id": "python",
+      "name": "python",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "3.12.16",
+          "published": true,
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261026/cpython-3.12.16%2B20261026-aarch64-apple-darwin-install_only_stripped.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "sha256": "353d5f1b4fd2715e7053f12f068435d5bbad16b91e057006b5d01e0925709a7e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverb",
+      "name": "laravel/reverb",
+      "category": "service",
+      "releases": [
+        {
+          "version": "1.12.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://api.github.com/repos/laravel/reverb/zipball/e233471f53641a447d3b7a2150446d47a0e8c043",
+              "format": "composer",
+              "architecture": "arm64"
+            }
+          ]
+        }
+      ],
+      "providerURL": "https://repo.packagist.org/p2/laravel/reverb.json"
+    },
+    {
+      "id": "rustfs",
+      "name": "rustfs",
+      "category": "service",
+      "releases": [
+        {
+          "version": "1.0.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://dl.rustfs.com/artifacts/rustfs/release/rustfs-macos-aarch64-latest.zip",
+              "format": "zip",
+              "architecture": "arm64",
+              "stripComponents": 0
+            }
+          ],
+          "minimumMacOS": "14.0"
+        }
+      ]
+    },
+    {
+      "id": "spx",
+      "name": "SPX",
+      "category": "extension",
+      "releases": [
+        {
+          "version": "0.4.22",
+          "published": true,
+          "downloads": [
+            {
+              "role": "php-8.4",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.4-nts-mac-clang.zip",
+              "format": "zip",
+              "architecture": "arm64",
+              "sha256": "4bdb2e6f6de4e0fcfe2149f53d133e3d9695b8473b518ffcea282e757c0e44d9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "typesense",
+      "name": "Typesense",
+      "category": "service",
+      "releases": [
+        {
+          "version": "30.1",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://dl.typesense.org/releases/30.1/typesense-server-30.1-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "stripComponents": 0
+            }
+          ]
+        },
+        {
+          "version": "29.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://dl.typesense.org/releases/29.0/typesense-server-29.0-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "stripComponents": 0
+            }
+          ]
+        },
+        {
+          "version": "28.0",
+          "published": true,
+          "downloads": [
+            {
+              "role": "server",
+              "url": "https://dl.typesense.org/releases/28.0/typesense-server-28.0-darwin-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64",
+              "stripComponents": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xdebug",
+      "name": "Xdebug for PHP 8.4",
+      "category": "extension",
+      "releases": [
+        {
+          "version": "3.5.3",
+          "published": false,
+          "downloads": [
+            {
+              "role": "php-8.4",
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/xdebug-3.5.3-macos-arm64.tar.gz",
+              "format": "tar-gz",
+              "architecture": "arm64"
+            }
+          ],
+          "license": "LicenseRef-Xdebug-1.03",
+          "sourceURL": "https://xdebug.org/files/xdebug-3.5.3.tgz"
+        }
+      ]
+    },
+    {
+      "id": "yarn",
+      "name": "yarn",
+      "category": "tool",
+      "releases": [
+        {
+          "version": "1.22.22",
+          "published": true,
+          "downloads": [
+            {
+              "role": "package",
+              "url": "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz",
+              "format": "npm",
+              "architecture": "arm64",
+              "integrity": "sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg=="
+            }
+          ],
+          "license": "BSD-2-Clause"
+        }
+      ],
+      "providerURL": "https://registry.npmjs.org/yarn"
+    }
+  ]
+}

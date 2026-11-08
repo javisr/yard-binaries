@@ -1,0 +1,1801 @@
+{
+  "schema": 1,
+  "source": "minio-RELEASE.2025-09-07",
+  "target": "darwin/arm64",
+  "cgo": false,
+  "build_tags": [
+    "kqueue"
+  ],
+  "tool": "github.com/google/go-licenses/v2@v2.0.1",
+  "packages": [
+    {
+      "package": "aead.dev/mem",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/aead.dev/mem/LICENSE",
+      "evidence_sha256": "e79c0433576f2a5b748470d19709f32c0b5abfd3fa1ca9001550590a84d29d19"
+    },
+    {
+      "package": "aead.dev/minisign",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/aead.dev/minisign/LICENSE",
+      "evidence_sha256": "d2e73e3423b8898d7d2fba4e55a2abb43969603fe32fdd468f197ff238969d28"
+    },
+    {
+      "package": "aead.dev/mtls",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/aead.dev/mtls/LICENSE",
+      "evidence_sha256": "3cb67631a1948ac19ca45fcce2ee7b8d078a9687fbf7bee93e8f8f9df2354346"
+    },
+    {
+      "package": "cel.dev/expr",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cel.dev/expr/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "cloud.google.com/go/auth",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cloud.google.com/go/auth/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "cloud.google.com/go/auth/oauth2adapt",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cloud.google.com/go/auth/oauth2adapt/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "cloud.google.com/go/compute/metadata",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cloud.google.com/go/compute/metadata/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "cloud.google.com/go/iam",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cloud.google.com/go/iam/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "cloud.google.com/go/internal",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cloud.google.com/go/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "cloud.google.com/go/monitoring",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cloud.google.com/go/monitoring/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "cloud.google.com/go/storage",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/cloud.google.com/go/storage/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "filippo.io/edwards25519",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/filippo.io/edwards25519/LICENSE",
+      "evidence_sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+    },
+    {
+      "package": "github.com/Azure/azure-sdk-for-go/sdk/azcore",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/Azure/azure-sdk-for-go/sdk/azcore/LICENSE.txt",
+      "evidence_sha256": "646f8936b8ddcd14e13e578ff6857e368780b0d1a4f6066bee89211923a373e2"
+    },
+    {
+      "package": "github.com/Azure/azure-sdk-for-go/sdk/azidentity",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/Azure/azure-sdk-for-go/sdk/azidentity/LICENSE.txt",
+      "evidence_sha256": "646f8936b8ddcd14e13e578ff6857e368780b0d1a4f6066bee89211923a373e2"
+    },
+    {
+      "package": "github.com/Azure/azure-sdk-for-go/sdk/internal",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/Azure/azure-sdk-for-go/sdk/internal/LICENSE.txt",
+      "evidence_sha256": "646f8936b8ddcd14e13e578ff6857e368780b0d1a4f6066bee89211923a373e2"
+    },
+    {
+      "package": "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/LICENSE.txt",
+      "evidence_sha256": "a096a435e19bb6b631da46992c011a39be563e97ce7366879ad516c772904632"
+    },
+    {
+      "package": "github.com/Azure/go-ntlmssp",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/Azure/go-ntlmssp/LICENSE",
+      "evidence_sha256": "7b7c80bf1253f5dabfe692633bd7908b6a44d1caba1ab2a776911b224e93f0fd"
+    },
+    {
+      "package": "github.com/AzureAD/microsoft-authentication-library-for-go/apps",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/AzureAD/microsoft-authentication-library-for-go/LICENSE",
+      "evidence_sha256": "9906940f61b1f0b533fa7d99baf55178b2808fbe113ea51dfbfad8572ccd5f2b"
+    },
+    {
+      "package": "github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/IBM/sarama",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/IBM/sarama/LICENSE.md",
+      "evidence_sha256": "1f1f8d575f61c095eb4d5f0cae1d4e046f06d2fa17d857d5d003122d43d396a8"
+    },
+    {
+      "package": "github.com/VividCortex/ewma",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/VividCortex/ewma/LICENSE",
+      "evidence_sha256": "9a6c3aa72d265f8f5fd6068d3de786741acb89edccf1c4011bc6a8b2ca64668c"
+    },
+    {
+      "package": "github.com/acarl005/stripansi",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/acarl005/stripansi/LICENSE",
+      "evidence_sha256": "53d72b0698ee5dfb05c614698d52b98e37f45d337e1f59f63186cccf52766bb3"
+    },
+    {
+      "package": "github.com/alecthomas/participle",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/alecthomas/participle/COPYING",
+      "evidence_sha256": "e7bf754e7153012a3a8ff697d21acd6c12e590d6a55f2aef8ee83616aa9a795f"
+    },
+    {
+      "package": "github.com/apache/thrift/lib/go/thrift",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/apache/thrift/LICENSE",
+      "selection": "Preserve all licenses in the composite upstream LICENSE, including imported BSD and all-permissive notices.",
+      "evidence_sha256": "d315e6cdedc07c478de6992027bfb66f220886c6216fd7e9885ced30c3703646"
+    },
+    {
+      "package": "github.com/apache/thrift/lib/go/thrift",
+      "detected_license": "GNU-All-permissive-Copying-License",
+      "license": "GNU-All-permissive-Copying-License",
+      "evidence": "vendor/github.com/apache/thrift/LICENSE",
+      "selection": "Preserve all licenses in the composite upstream LICENSE, including imported BSD and all-permissive notices.",
+      "evidence_sha256": "d315e6cdedc07c478de6992027bfb66f220886c6216fd7e9885ced30c3703646"
+    },
+    {
+      "package": "github.com/apache/thrift/lib/go/thrift",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/apache/thrift/LICENSE",
+      "selection": "Preserve all licenses in the composite upstream LICENSE, including imported BSD and all-permissive notices.",
+      "evidence_sha256": "d315e6cdedc07c478de6992027bfb66f220886c6216fd7e9885ced30c3703646"
+    },
+    {
+      "package": "github.com/asaskevich/govalidator",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/asaskevich/govalidator/LICENSE",
+      "evidence_sha256": "e1a36eac3f3109d06869f57127cc32683f70a170dcefe5f143ee378ff313ddfe"
+    },
+    {
+      "package": "github.com/aymanbagabas/go-osc52/v2",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/aymanbagabas/go-osc52/v2/LICENSE",
+      "evidence_sha256": "11319e34d9dac2f45392f14f4f62e28b24173cfa13d39b32e7b7b66c2f3bdccd"
+    },
+    {
+      "package": "github.com/beevik/ntp",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/beevik/ntp/LICENSE",
+      "evidence_sha256": "219e31ede044804aa5c1a4eefc304eacf0fd91a51ec5b6bb7c53aa46d6c27205"
+    },
+    {
+      "package": "github.com/beorn7/perks/quantile",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/beorn7/perks/LICENSE",
+      "evidence_sha256": "0db7c9ebb3717e526f34f87dd1ee8bc77d36846e29cb0cec9246f7138fbe962b"
+    },
+    {
+      "package": "github.com/buger/jsonparser",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/buger/jsonparser/LICENSE",
+      "evidence_sha256": "632b59709152e1b5bfd3e2794848bcd2f4c70e3e175646726dbf53439ea1dbe1"
+    },
+    {
+      "package": "github.com/cespare/xxhash/v2",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/cespare/xxhash/v2/LICENSE.txt",
+      "evidence_sha256": "f566a9f97bacdaf00d9f21dd991e81dc11201c4e016c86b470799429a1c9a79c"
+    },
+    {
+      "package": "github.com/charmbracelet/bubbles",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/charmbracelet/bubbles/LICENSE",
+      "evidence_sha256": "9ca49aaf6748976a8f0a9d7448f34a5f5edf1f363385f1a789e09e328c3d3f84"
+    },
+    {
+      "package": "github.com/charmbracelet/bubbletea",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/charmbracelet/bubbletea/LICENSE",
+      "evidence_sha256": "9ca49aaf6748976a8f0a9d7448f34a5f5edf1f363385f1a789e09e328c3d3f84"
+    },
+    {
+      "package": "github.com/charmbracelet/lipgloss",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/charmbracelet/lipgloss/LICENSE",
+      "evidence_sha256": "699cffa88b62691ea09706d356e5ee0982e87ca2b1c58ca682f27d6ae87f9efc"
+    },
+    {
+      "package": "github.com/charmbracelet/x/ansi",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/charmbracelet/x/ansi/LICENSE",
+      "evidence_sha256": "0baa4a5942a801d93f4050d2bc0039d8c037105fcd335230d118eec99a11782b"
+    },
+    {
+      "package": "github.com/charmbracelet/x/term",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/charmbracelet/x/term/LICENSE",
+      "evidence_sha256": "0baa4a5942a801d93f4050d2bc0039d8c037105fcd335230d118eec99a11782b"
+    },
+    {
+      "package": "github.com/cheggaaa/pb",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/cheggaaa/pb/LICENSE",
+      "evidence_sha256": "70fa746d8e9547f977b99dc684ec1e4d059a99960f50493ba56332302ff73869"
+    },
+    {
+      "package": "github.com/cncf/xds/go",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/cncf/xds/go/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/coreos/go-oidc/v3/oidc",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/coreos/go-oidc/v3/LICENSE",
+      "evidence_sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+    },
+    {
+      "package": "github.com/coreos/go-semver/semver",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/coreos/go-semver/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/coreos/go-systemd/v22",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/coreos/go-systemd/v22/LICENSE",
+      "evidence_sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+    },
+    {
+      "package": "github.com/cosnicolaou/pbzip2",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/cosnicolaou/pbzip2/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/davecgh/go-spew/spew",
+      "detected_license": "ISC",
+      "license": "ISC",
+      "evidence": "vendor/github.com/davecgh/go-spew/LICENSE",
+      "evidence_sha256": "1b93a317849ee09d3d7e4f1d20c2b78ddb230b4becb12d7c224c927b9d470251"
+    },
+    {
+      "package": "github.com/dchest/siphash",
+      "detected_license": "CC0-1.0",
+      "license": "CC0-1.0",
+      "evidence": "vendor/github.com/dchest/siphash/LICENSE",
+      "evidence_sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "package": "github.com/docker/go-units",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/docker/go-units/LICENSE",
+      "evidence_sha256": "ba3065d2f4b11bb42a0f7b708b021d1c28fa45d097b3eab3e7db9ab4745040d1"
+    },
+    {
+      "package": "github.com/dustin/go-humanize",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/dustin/go-humanize/LICENSE",
+      "evidence_sha256": "a973b4498c13eb74baa2a8e5c351426a6826f2fcdd909916dbe53ee2e755fd71"
+    },
+    {
+      "package": "github.com/eapache/go-resiliency/breaker",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/eapache/go-resiliency/LICENSE",
+      "evidence_sha256": "570e75cd7eb9c305596059bd0cad4c17b6f6fae7e4a7beb4131242741f1e18f0"
+    },
+    {
+      "package": "github.com/eapache/go-xerial-snappy",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/eapache/go-xerial-snappy/LICENSE",
+      "evidence_sha256": "9ceb66eb208b519721694befc61953d42b84bdfc6b5379ad8f6590119a4b1b19"
+    },
+    {
+      "package": "github.com/eapache/queue",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/eapache/queue/LICENSE",
+      "evidence_sha256": "65883406565456e553496b6c37bee3b05c1fe5a1c0e5ab177f19901d03a2b9ed"
+    },
+    {
+      "package": "github.com/eclipse/paho.mqtt.golang",
+      "detected_license": "EPL-2.0",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/eclipse/paho.mqtt.golang/LICENSE",
+      "selection": "Eclipse Distribution License 1.0 (edl-v10), alternative to EPL-2.0; see NOTICE.md",
+      "evidence_sha256": "e2bcf9854f46a58b6e6f014d64e102a6b4e35a87d117094903e66fb68454a3fd",
+      "additional_evidence": {
+        "vendor/github.com/eclipse/paho.mqtt.golang/NOTICE.md": "91b47f681f03af6b4b6ab9cdce0fc773e522693eca729ed9a56c6178dc1e6323",
+        "vendor/github.com/eclipse/paho.mqtt.golang/edl-v10": "83bbba033dc985487e321b6dfde111772affb73460be48726299fed3da684b1c"
+      }
+    },
+    {
+      "package": "github.com/elastic/go-elasticsearch/v7",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/elastic/go-elasticsearch/v7/LICENSE",
+      "evidence_sha256": "51a94a9e94d814050a24af93bd0ea7a70aa3ebe766a7b2b367d4ef46763f8e48"
+    },
+    {
+      "package": "github.com/envoyproxy/go-control-plane/envoy",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/envoyproxy/go-control-plane/envoy/LICENSE",
+      "evidence_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "package": "github.com/envoyproxy/protoc-gen-validate/validate",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/envoyproxy/protoc-gen-validate/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/fatih/color",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/fatih/color/LICENSE.md",
+      "evidence_sha256": "de95ed802d2f90e3c72cb3c9a927cca5f2aec234a3ef1250232db0f8178b2d93"
+    },
+    {
+      "package": "github.com/fatih/structs",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/fatih/structs/LICENSE",
+      "evidence_sha256": "8f09e42906e1a3c7bd39629a17225b3b62f25783444d8d75ad5d6657916915df"
+    },
+    {
+      "package": "github.com/felixge/fgprof",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/felixge/fgprof/LICENSE.txt",
+      "evidence_sha256": "5dbe91d8ef47ef84cc1272dbbed96acd483e592f15fff64afc8b035776a4a9d3"
+    },
+    {
+      "package": "github.com/felixge/httpsnoop",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/felixge/httpsnoop/LICENSE.txt",
+      "evidence_sha256": "8108e14b5cb2b6bcd51583d3849ef0c2b5c4de61758256c20308bc70d1775dbb"
+    },
+    {
+      "package": "github.com/fraugster/parquet-go",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/fraugster/parquet-go/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-asn1-ber/asn1-ber",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/go-asn1-ber/asn1-ber/LICENSE",
+      "evidence_sha256": "ec62b7caba679339176c55c4030ac6770c37d422128054e4ecd802aea536f193"
+    },
+    {
+      "package": "github.com/go-ini/ini",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-ini/ini/LICENSE",
+      "evidence_sha256": "f6918bd93ffe07f4b2c61b8287c32cb3122e08aed0be50f1c7d0eddc87877a8f"
+    },
+    {
+      "package": "github.com/go-jose/go-jose/v4",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-jose/go-jose/v4/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-jose/go-jose/v4/json",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/go-jose/go-jose/v4/json/LICENSE",
+      "evidence_sha256": "dd26a7abddd02e2d0aba97805b31f248ef7835d9e10da289b22e3b8ab78b324d"
+    },
+    {
+      "package": "github.com/go-ldap/ldap/v3",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/go-ldap/ldap/v3/LICENSE",
+      "evidence_sha256": "35f64977248ea3fd59074171ad76e883fe4a576a7b1c58bba85c8e5c880bb269"
+    },
+    {
+      "package": "github.com/go-logr/logr",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-logr/logr/LICENSE",
+      "evidence_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "package": "github.com/go-logr/stdr",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-logr/stdr/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/go-openapi/analysis",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/analysis/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/errors",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/errors/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/jsonpointer",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/jsonpointer/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/jsonreference",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/jsonreference/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/loads",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/loads/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/runtime",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/runtime/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/runtime/middleware/denco",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/go-openapi/runtime/middleware/denco/LICENSE",
+      "evidence_sha256": "12641e5dfd397ae2acdd28dbda45f8e559afd721d5a223f3ad820ca07affd777"
+    },
+    {
+      "package": "github.com/go-openapi/spec",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/spec/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/strfmt",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/strfmt/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/swag",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/swag/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-openapi/validate",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/go-openapi/validate/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/go-sql-driver/mysql",
+      "detected_license": "MPL-2.0",
+      "license": "MPL-2.0",
+      "evidence": "vendor/github.com/go-sql-driver/mysql/LICENSE",
+      "evidence_sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "package": "github.com/gobwas/httphead",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/gobwas/httphead/LICENSE",
+      "evidence_sha256": "7d168561ad5212bf5b3023d55cba37c9594eb011ba74445d99f82055be662589"
+    },
+    {
+      "package": "github.com/gobwas/pool",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/gobwas/pool/LICENSE",
+      "evidence_sha256": "bcc745631c0144db2c601650c55d108172c80d601cf2346c71594a0bc32f6f1c"
+    },
+    {
+      "package": "github.com/gobwas/ws",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/gobwas/ws/LICENSE",
+      "evidence_sha256": "db823214b3ef18274418accda3812faac38a1545b8bd589aeb613a849b949c7a"
+    },
+    {
+      "package": "github.com/goccy/go-json",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/goccy/go-json/LICENSE",
+      "evidence_sha256": "a707cd425201945d57500566c47c74dc9fb8cd02ef91b9a761abddeb2401e6a7"
+    },
+    {
+      "package": "github.com/gogo/protobuf",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/gogo/protobuf/LICENSE",
+      "evidence_sha256": "3f571768c0ba2f330e5fee90de89bfe5141f48c1939be8008fa61461c30ca07f"
+    },
+    {
+      "package": "github.com/golang-jwt/jwt/v4",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/golang-jwt/jwt/v4/LICENSE",
+      "evidence_sha256": "fe26ca41577b9b2b4448050a24b25e5753af66b5d5945d5d36094e7790bfcb2f"
+    },
+    {
+      "package": "github.com/golang-jwt/jwt/v5",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/golang-jwt/jwt/v5/LICENSE",
+      "evidence_sha256": "fe26ca41577b9b2b4448050a24b25e5753af66b5d5945d5d36094e7790bfcb2f"
+    },
+    {
+      "package": "github.com/golang/protobuf/proto",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/golang/protobuf/LICENSE",
+      "evidence_sha256": "8778a9fc1eaffb03ab873caae251df2d224f6b5502be8777d3cd573a4dd43903"
+    },
+    {
+      "package": "github.com/golang/snappy",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/golang/snappy/LICENSE",
+      "evidence_sha256": "f69f157b0be75da373605dbc8bbf142e8924ee82d8f44f11bcaf351335bf98cf"
+    },
+    {
+      "package": "github.com/gomodule/redigo/redis",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/gomodule/redigo/LICENSE",
+      "evidence_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "package": "github.com/google/pprof/profile",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/google/pprof/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/google/s2a-go",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/google/s2a-go/LICENSE.md",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/google/shlex",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/google/shlex/COPYING",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/google/uuid",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/google/uuid/LICENSE",
+      "evidence_sha256": "0a8d61ed3cbfd5312326e8126c31ce9c627a283adc99131b56896d29ada04b2d"
+    },
+    {
+      "package": "github.com/googleapis/enterprise-certificate-proxy/client",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/googleapis/enterprise-certificate-proxy/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/googleapis/gax-go/v2",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/googleapis/gax-go/v2/LICENSE",
+      "evidence_sha256": "b95218cd9607855a6536384c0262922b30a0c2bf56e4ced790240f3a3bac4722"
+    },
+    {
+      "package": "github.com/gorilla/websocket",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/gorilla/websocket/LICENSE",
+      "evidence_sha256": "2be1b548b0387ca8948e1bb9434e709126904d15f622cc2d0d8e7f186e4d122d"
+    },
+    {
+      "package": "github.com/hashicorp/errwrap",
+      "detected_license": "MPL-2.0",
+      "license": "MPL-2.0",
+      "evidence": "vendor/github.com/hashicorp/errwrap/LICENSE",
+      "evidence_sha256": "bef1747eda88b9ed46e94830b0d978c3499dad5dfe38d364971760881901dadd"
+    },
+    {
+      "package": "github.com/hashicorp/go-multierror",
+      "detected_license": "MPL-2.0",
+      "license": "MPL-2.0",
+      "evidence": "vendor/github.com/hashicorp/go-multierror/LICENSE",
+      "evidence_sha256": "a830016911a348a54e89bd54f2f8b0d8fffdeac20aecfba8e36ebbf38a03f5ff"
+    },
+    {
+      "package": "github.com/hashicorp/go-uuid",
+      "detected_license": "MPL-2.0",
+      "license": "MPL-2.0",
+      "evidence": "vendor/github.com/hashicorp/go-uuid/LICENSE",
+      "evidence_sha256": "87b250b11ffadc5f872cb676caa219e2871e454ddd562d9e532d52d5c9b7520d"
+    },
+    {
+      "package": "github.com/inconshreveable/mousetrap",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/inconshreveable/mousetrap/LICENSE",
+      "evidence_sha256": "4819582701f150b28a563a6cd8ed0bf5a754e3c67b90ad38d78ba4131bf77795"
+    },
+    {
+      "package": "github.com/jcmturner/aescts/v2",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/jcmturner/aescts/v2/LICENSE",
+      "evidence_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "package": "github.com/jcmturner/dnsutils/v2",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/jcmturner/dnsutils/v2/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/jcmturner/gofork",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/jcmturner/gofork/LICENSE",
+      "evidence_sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+    },
+    {
+      "package": "github.com/jcmturner/gokrb5/v8",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/jcmturner/gokrb5/v8/LICENSE",
+      "evidence_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "package": "github.com/jcmturner/rpc/v2",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/jcmturner/rpc/v2/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/jedib0t/go-pretty/v6",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/jedib0t/go-pretty/v6/LICENSE",
+      "evidence_sha256": "3bae97d2a030c19562fab307f791630ce40a90052a51df83d16ed9cfebd49a07"
+    },
+    {
+      "package": "github.com/jessevdk/go-flags",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/jessevdk/go-flags/LICENSE",
+      "evidence_sha256": "399c48e1c027899b5c7de5e37cbd441081e8332bab41cedbf08d873b3a676819"
+    },
+    {
+      "package": "github.com/josharian/intern",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/josharian/intern/license.md",
+      "evidence_sha256": "ad754e4f7d16f789dd0694828254cb4011928025b0d500339a5c4eded5a0c346"
+    },
+    {
+      "package": "github.com/json-iterator/go",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/json-iterator/go/LICENSE",
+      "evidence_sha256": "3247931083f058b00760a3c32a9ca0962c05e4d562ad2ffcc1753451fa8d4486"
+    },
+    {
+      "package": "github.com/juju/ratelimit",
+      "detected_license": "LGPL-3.0",
+      "license": "LGPL-3.0-only WITH LicenseRef-Canonical-Static-Linking-Exception",
+      "evidence": "vendor/github.com/juju/ratelimit/LICENSE",
+      "selection": "Keep full LICENSE including its explicit static/dynamic linking exception.",
+      "evidence_sha256": "a92f49abd3f15a3523b022a9b74fb885b53c228f8244c817add3a835427b10d9"
+    },
+    {
+      "package": "github.com/klauspost/compress",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/klauspost/compress/LICENSE",
+      "evidence_sha256": "0d9e582ee4bff57bf1189c9e514e6da7ce277f9cd3bc2d488b22fbb39a6d87cf"
+    },
+    {
+      "package": "github.com/klauspost/compress",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/klauspost/compress/LICENSE",
+      "evidence_sha256": "0d9e582ee4bff57bf1189c9e514e6da7ce277f9cd3bc2d488b22fbb39a6d87cf"
+    },
+    {
+      "package": "github.com/klauspost/compress",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/klauspost/compress/LICENSE",
+      "evidence_sha256": "0d9e582ee4bff57bf1189c9e514e6da7ce277f9cd3bc2d488b22fbb39a6d87cf"
+    },
+    {
+      "package": "github.com/klauspost/compress/gzhttp",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/klauspost/compress/gzhttp/LICENSE",
+      "evidence_sha256": "2252a5b1e2b1d3663b53ea77051b8ed065cb9270a3d1174d5d6ead8a2de051b6"
+    },
+    {
+      "package": "github.com/klauspost/compress/internal/snapref",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/klauspost/compress/internal/snapref/LICENSE",
+      "evidence_sha256": "f69f157b0be75da373605dbc8bbf142e8924ee82d8f44f11bcaf351335bf98cf"
+    },
+    {
+      "package": "github.com/klauspost/compress/s2",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/klauspost/compress/s2/LICENSE",
+      "evidence_sha256": "08683b14bda8ae3538abf19e1879e853a39e3b8276a8d673363b529d15a61c1a"
+    },
+    {
+      "package": "github.com/klauspost/compress/zstd/internal/xxhash",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/klauspost/compress/zstd/internal/xxhash/LICENSE.txt",
+      "evidence_sha256": "f566a9f97bacdaf00d9f21dd991e81dc11201c4e016c86b470799429a1c9a79c"
+    },
+    {
+      "package": "github.com/klauspost/cpuid/v2",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/klauspost/cpuid/v2/LICENSE",
+      "evidence_sha256": "5d966570d7a442d4e969892860a914e542c97f262c873baee8f0aa48e1f40212"
+    },
+    {
+      "package": "github.com/klauspost/filepathx",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/klauspost/filepathx/LICENSE",
+      "evidence_sha256": "8582c87d9a6baa28f7827c5205b7d16c3179bc794ebd4c7cc287c49a89b7eaa1"
+    },
+    {
+      "package": "github.com/klauspost/pgzip",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/klauspost/pgzip/LICENSE",
+      "evidence_sha256": "7709cc030f078b17809884f92f33a2016944e1180312dc3f1371b02313d313ed"
+    },
+    {
+      "package": "github.com/klauspost/readahead",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/klauspost/readahead/LICENSE",
+      "evidence_sha256": "10fa24a602fde465db603cd5d546e37e33642a73cd24ddf5910be81724fec8b2"
+    },
+    {
+      "package": "github.com/klauspost/reedsolomon",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/klauspost/reedsolomon/LICENSE",
+      "evidence_sha256": "345aa942daa8c117669a85bd75f44a8364faceee962812ddb5a576977e0610ee"
+    },
+    {
+      "package": "github.com/kr/fs",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/kr/fs/LICENSE",
+      "evidence_sha256": "dd26a7abddd02e2d0aba97805b31f248ef7835d9e10da289b22e3b8ab78b324d"
+    },
+    {
+      "package": "github.com/kylelemons/godebug",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/kylelemons/godebug/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/lestrrat-go/blackmagic",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lestrrat-go/blackmagic/LICENSE",
+      "evidence_sha256": "b9b5b03485eb7446da7ecad22178664a53c7fcecceb74d69f905819a807d710e"
+    },
+    {
+      "package": "github.com/lestrrat-go/httpcc",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lestrrat-go/httpcc/LICENSE",
+      "evidence_sha256": "d5c8d4935994cfcfbc53d12fe756b28316858736d6e0a61acaff5fe4a84fca12"
+    },
+    {
+      "package": "github.com/lestrrat-go/httprc",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lestrrat-go/httprc/LICENSE",
+      "evidence_sha256": "4f4b72f6680d92713562d527612f6b016a0d50c5b47e6b5d39f177bb23d8ce52"
+    },
+    {
+      "package": "github.com/lestrrat-go/iter",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lestrrat-go/iter/LICENSE",
+      "evidence_sha256": "d5c8d4935994cfcfbc53d12fe756b28316858736d6e0a61acaff5fe4a84fca12"
+    },
+    {
+      "package": "github.com/lestrrat-go/jwx/v2",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lestrrat-go/jwx/v2/LICENSE",
+      "evidence_sha256": "0c4868a07b1c2dbb67c75767b4f1b2936c392d02ca2c7ee9827cac1a9d60ab1d"
+    },
+    {
+      "package": "github.com/lestrrat-go/option",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lestrrat-go/option/LICENSE",
+      "evidence_sha256": "b9b5b03485eb7446da7ecad22178664a53c7fcecceb74d69f905819a807d710e"
+    },
+    {
+      "package": "github.com/lib/pq",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lib/pq/LICENSE.md",
+      "evidence_sha256": "3e2d79d27727d59ab1c9752f57654733d6c8824936c22800594dccfe8864ec28"
+    },
+    {
+      "package": "github.com/lithammer/shortuuid/v4",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lithammer/shortuuid/v4/LICENSE",
+      "evidence_sha256": "d2e98cf1530c13d97df36a890831a2a1adb0a4580af192b6477bdac7f7af2461"
+    },
+    {
+      "package": "github.com/lucasb-eyer/go-colorful",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/lucasb-eyer/go-colorful/LICENSE",
+      "evidence_sha256": "1e4cf2a117516ec1b54041d68ed4f5d331878b04de3386f4790e7b5b9c04e1ec"
+    },
+    {
+      "package": "github.com/mailru/easyjson",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/mailru/easyjson/LICENSE",
+      "evidence_sha256": "87baa92c3100cf37441761262d622db99492ee386a063460d4676143db49af57"
+    },
+    {
+      "package": "github.com/mattn/go-colorable",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/mattn/go-colorable/LICENSE",
+      "evidence_sha256": "88a2379b3ca34bf5c57127aff9dcb802bbb60ece0805cdbda65b3bd115f971d9"
+    },
+    {
+      "package": "github.com/mattn/go-ieproxy",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/mattn/go-ieproxy/LICENSE",
+      "evidence_sha256": "7fccc0a3d7cea8c7cbf9ae0d32c6457427d85461e938d048d4bbbb5f2a91d745"
+    },
+    {
+      "package": "github.com/mattn/go-isatty",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/mattn/go-isatty/LICENSE",
+      "evidence_sha256": "08eab1118c80885fa1fa6a6dd7303f65a379fcb3733e063d20d1bbc2c76e6fa1"
+    },
+    {
+      "package": "github.com/mattn/go-runewidth",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/mattn/go-runewidth/LICENSE",
+      "evidence_sha256": "88a2379b3ca34bf5c57127aff9dcb802bbb60ece0805cdbda65b3bd115f971d9"
+    },
+    {
+      "package": "github.com/matttproud/golang_protobuf_extensions/pbutil",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/matttproud/golang_protobuf_extensions/LICENSE",
+      "evidence_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "package": "github.com/miekg/dns",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/miekg/dns/LICENSE",
+      "evidence_sha256": "f200ff9bad73385db2ed81e23ee2c1fe069eb5776e17fae4ee85ad0a9e1361a5"
+    },
+    {
+      "package": "github.com/minio",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "LICENSE",
+      "evidence_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package": "github.com/minio/cli",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/minio/cli/LICENSE",
+      "evidence_sha256": "da277af11b85227490377fbcac6afccc68be560c4fff36ac05ca62de55345fd7"
+    },
+    {
+      "package": "github.com/minio/console",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "vendor/github.com/minio/console/LICENSE",
+      "evidence_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package": "github.com/minio/crc64nvme",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/crc64nvme/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/minio/dnscache",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/minio/dnscache/LICENSE",
+      "evidence_sha256": "5fd6a0a51e9d91ad65d3c0809b0a520801472d31dc932fa3fb3b08e5dfc95f9c"
+    },
+    {
+      "package": "github.com/minio/dperf/pkg/dperf",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "vendor/github.com/minio/dperf/LICENSE",
+      "evidence_sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "package": "github.com/minio/highwayhash",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/highwayhash/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/minio/kms-go/kes",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "vendor/github.com/minio/kms-go/kes/LICENSE",
+      "evidence_sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "package": "github.com/minio/kms-go/kms",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "vendor/github.com/minio/kms-go/kms/LICENSE",
+      "evidence_sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "package": "github.com/minio/madmin-go/v3",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "vendor/github.com/minio/madmin-go/v3/LICENSE",
+      "evidence_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package": "github.com/minio/mc",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "vendor/github.com/minio/mc/LICENSE",
+      "evidence_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package": "github.com/minio/md5-simd",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/md5-simd/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/minio/minio-go/v7",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/minio-go/v7/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/minio/minio/internal/ringbuffer",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "internal/ringbuffer/LICENSE",
+      "evidence_sha256": "0fd7d4bc4033e84557704aa80e85c34938d092c566ecc9e6b329ef0f67473c8c"
+    },
+    {
+      "package": "github.com/minio/minio/internal/s3select/jstream",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "internal/s3select/jstream/LICENSE",
+      "evidence_sha256": "e52fe3586dbf197945463607f2d197537b45953b858ceffe7c55b55d5d85f682"
+    },
+    {
+      "package": "github.com/minio/mux",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/minio/mux/LICENSE",
+      "evidence_sha256": "0b77fdea862f869ef4f201ac5649bdbd38ccb055c7f6454dffae9e2adb4941c1"
+    },
+    {
+      "package": "github.com/minio/pkg/v3",
+      "detected_license": "AGPL-3.0",
+      "license": "AGPL-3.0",
+      "evidence": "vendor/github.com/minio/pkg/v3/LICENSE",
+      "evidence_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "package": "github.com/minio/selfupdate",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/selfupdate/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/minio/selfupdate/internal/binarydist",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/minio/selfupdate/internal/binarydist/License",
+      "evidence_sha256": "4b6c0720c3a112229d5f8b8065641023db5cadf615bf98d3150c944adae283f2"
+    },
+    {
+      "package": "github.com/minio/selfupdate/internal/osext",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/minio/selfupdate/internal/osext/LICENSE",
+      "evidence_sha256": "dd26a7abddd02e2d0aba97805b31f248ef7835d9e10da289b22e3b8ab78b324d"
+    },
+    {
+      "package": "github.com/minio/simdjson-go",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/simdjson-go/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/minio/sio",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/sio/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/minio/websocket",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/minio/websocket/LICENSE",
+      "evidence_sha256": "2be1b548b0387ca8948e1bb9434e709126904d15f622cc2d0d8e7f186e4d122d"
+    },
+    {
+      "package": "github.com/minio/xxml",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/minio/xxml/LICENSE",
+      "evidence_sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+    },
+    {
+      "package": "github.com/minio/zipindex",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/minio/zipindex/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "github.com/mitchellh/go-homedir",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/mitchellh/go-homedir/LICENSE",
+      "evidence_sha256": "22adc4abdece712a737573672f082fd61ac2b21df878efb87ffcff4354a07f26"
+    },
+    {
+      "package": "github.com/mitchellh/mapstructure",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/mitchellh/mapstructure/LICENSE",
+      "evidence_sha256": "22adc4abdece712a737573672f082fd61ac2b21df878efb87ffcff4354a07f26"
+    },
+    {
+      "package": "github.com/modern-go/concurrent",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/modern-go/concurrent/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/modern-go/reflect2",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/modern-go/reflect2/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/muesli/ansi",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/muesli/ansi/LICENSE",
+      "evidence_sha256": "43f65e00e8919fa43c5f45bb2ae578b6d3ee823eb99aa14c85c9ecd06e0350b5"
+    },
+    {
+      "package": "github.com/muesli/cancelreader",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/muesli/cancelreader/LICENSE",
+      "evidence_sha256": "8c139dbbc83b4fb055b4100b6b9402f7de3dd6bbca05015bdfcc4b392c8cfd5f"
+    },
+    {
+      "package": "github.com/muesli/reflow",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/muesli/reflow/LICENSE",
+      "evidence_sha256": "233e8cf9a812999ccee4d3edb270b0f11ab3539658e680bcb873604915ca5038"
+    },
+    {
+      "package": "github.com/muesli/termenv",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/muesli/termenv/LICENSE",
+      "evidence_sha256": "233e8cf9a812999ccee4d3edb270b0f11ab3539658e680bcb873604915ca5038"
+    },
+    {
+      "package": "github.com/munnerz/goautoneg",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/munnerz/goautoneg/LICENSE",
+      "evidence_sha256": "aa1376b9bc5dea6f30cdefde40c176a254f247d2814d0a9929395138631b2ae0"
+    },
+    {
+      "package": "github.com/nats-io/nats.go",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/nats-io/nats.go/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/nats-io/nkeys",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/nats-io/nkeys/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/nats-io/nuid",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/nats-io/nuid/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/nats-io/stan.go",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/nats-io/stan.go/LICENSE",
+      "evidence_sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    {
+      "package": "github.com/ncw/directio",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/ncw/directio/COPYING",
+      "evidence_sha256": "8cd2e9e750b90a04b7d82dbbca3930c696ae0309d7c10464f90a44f45754cd04"
+    },
+    {
+      "package": "github.com/nsqio/go-nsq",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/nsqio/go-nsq/LICENSE",
+      "evidence_sha256": "89807acf2309bd285f033404ee78581602f3cd9b819a16ac2f0e5f60ff4a473e"
+    },
+    {
+      "package": "github.com/oklog/ulid",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/oklog/ulid/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/olekukonko/tablewriter",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/olekukonko/tablewriter/LICENSE.md",
+      "evidence_sha256": "0583acca2b32a7e4f7bc2d98422b2f55097333273731b3ba2a16d66f9e422744"
+    },
+    {
+      "package": "github.com/philhofer/fwd",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/philhofer/fwd/LICENSE.md",
+      "evidence_sha256": "430da36bd967b28fc662f05e9245306da10941e93911052114a20ef10e4410f8"
+    },
+    {
+      "package": "github.com/pierrec/lz4/v4",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/pierrec/lz4/v4/LICENSE",
+      "evidence_sha256": "6a358d2540ca14048f02d366f23787c0a480157e58f058113f0e27168dd4e447"
+    },
+    {
+      "package": "github.com/pkg/browser",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/pkg/browser/LICENSE",
+      "evidence_sha256": "4801bb0c5d70b980b3e1f63d1d2df8d84fec22548e3d73f03a68df1fb808791f"
+    },
+    {
+      "package": "github.com/pkg/errors",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/pkg/errors/LICENSE",
+      "evidence_sha256": "8d427fd87bc9579ea368fde3d49f9ca22eac857f91a9dec7e3004bdfab7dee86"
+    },
+    {
+      "package": "github.com/pkg/sftp",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/pkg/sftp/LICENSE",
+      "evidence_sha256": "f5b5087b8e596d015cfea7db26527fe67a196c18ca37415c288dd2534ff74c37"
+    },
+    {
+      "package": "github.com/pkg/xattr",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/pkg/xattr/LICENSE",
+      "evidence_sha256": "2c71fbccf236906a9961d375625a08dc696c112a7ebcfbfd32900e80f8ecaa51"
+    },
+    {
+      "package": "github.com/posener/complete",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/posener/complete/LICENSE.txt",
+      "evidence_sha256": "42707f6d0ca72916d2a48dbc977aab20a5e23270a7651bd18227e992f9d41548"
+    },
+    {
+      "package": "github.com/prometheus/client_golang/internal/github.com/golang/gddo/httputil",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/prometheus/client_golang/internal/github.com/golang/gddo/LICENSE",
+      "evidence_sha256": "dfffb9ec737eaba985243e95a549bd8c3a4d462032cfe603e2a6704c346427b6"
+    },
+    {
+      "package": "github.com/prometheus/client_golang/prometheus",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/prometheus/client_golang/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/prometheus/client_model/go",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/prometheus/client_model/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/prometheus/common",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/prometheus/common/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/prometheus/procfs",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/prometheus/procfs/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/prometheus/prom2json",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/prometheus/prom2json/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/prometheus/prometheus/model/histogram",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/prometheus/prometheus/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/puzpuzpuz/xsync/v3",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/puzpuzpuz/xsync/v3/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/rabbitmq/amqp091-go",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/rabbitmq/amqp091-go/LICENSE",
+      "evidence_sha256": "2fa3f380607b1591fa0e0962f70a1bd8b648427832abb647be85b141574be3c2"
+    },
+    {
+      "package": "github.com/rcrowley/go-metrics",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/rcrowley/go-metrics/LICENSE",
+      "evidence_sha256": "d2571186acad91c8a3121fb31f1aa5963e82ccd08608d00cef3eb3f3a6c8ad38"
+    },
+    {
+      "package": "github.com/rivo/uniseg",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/rivo/uniseg/LICENSE.txt",
+      "evidence_sha256": "a59885f5f0f3b3c07cf9444db5fe399b6f0791eac82055f7b85cc65500551039"
+    },
+    {
+      "package": "github.com/rjeczalik/notify",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/rjeczalik/notify/LICENSE",
+      "evidence_sha256": "42efbe213a0bfa04fcfb1efb683efc3e19cd31a8725e296c277cf5dc48a6bd11"
+    },
+    {
+      "package": "github.com/rs/cors",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/rs/cors/LICENSE",
+      "evidence_sha256": "c21f3b628875c093885ba085d13959b5e78841d64a8fe76c10ba7293aec32fc7"
+    },
+    {
+      "package": "github.com/rs/xid",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/rs/xid/LICENSE",
+      "evidence_sha256": "c480873f0ff2b7e2c539bdd84fb4da4178d8d02479c94924f7bffeafb7add358"
+    },
+    {
+      "package": "github.com/secure-io/sio-go",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/secure-io/sio-go/LICENSE",
+      "evidence_sha256": "95ca6ef20a59612853abf39c6667785c8d0971414de8cd0a90b44987d9f8f7f8"
+    },
+    {
+      "package": "github.com/shirou/gopsutil/v3",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/shirou/gopsutil/v3/LICENSE",
+      "evidence_sha256": "ad1e64b82c04fb2ee6bfe521bff01266971ffaa70500024d4ac767c6033aafb9"
+    },
+    {
+      "package": "github.com/shoenig/go-m1cpu",
+      "detected_license": "MPL-2.0",
+      "license": "MPL-2.0",
+      "evidence": "vendor/github.com/shoenig/go-m1cpu/LICENSE",
+      "evidence_sha256": "60222c28c1a7f6a92c7df98e5c5f4459e624e6e285e0b9b94467af5f6ab3343d"
+    },
+    {
+      "package": "github.com/spiffe/go-spiffe/v2",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/spiffe/go-spiffe/v2/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "github.com/tidwall/gjson",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/tidwall/gjson/LICENSE",
+      "evidence_sha256": "be83ad53208d03a9fe08c7fac231cabf79422989ef5706bff217bd35104ebf07"
+    },
+    {
+      "package": "github.com/tidwall/match",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/tidwall/match/LICENSE",
+      "evidence_sha256": "be83ad53208d03a9fe08c7fac231cabf79422989ef5706bff217bd35104ebf07"
+    },
+    {
+      "package": "github.com/tidwall/pretty",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/tidwall/pretty/LICENSE",
+      "evidence_sha256": "0ca70311227fe097c662dece3f359e3317fa7f9d41f8d29eb45fc5135e216139"
+    },
+    {
+      "package": "github.com/tinylib/msgp/msgp",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/tinylib/msgp/LICENSE",
+      "evidence_sha256": "17df22e31ef6a84f70909eed5185f41443a03dd05b14e8dec319d5c2bd7d7b3b"
+    },
+    {
+      "package": "github.com/tklauser/go-sysconf",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/github.com/tklauser/go-sysconf/LICENSE",
+      "evidence_sha256": "fdaaa923d83d44f8b2ed1185600c5aa8c10673f11fba9feb78bd2816786fd6be"
+    },
+    {
+      "package": "github.com/unrolled/secure",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/unrolled/secure/LICENSE",
+      "evidence_sha256": "2db31eaf6759b6eb757e171daffc5c75d677a0d71d99ad48fb25bc9063f1565f"
+    },
+    {
+      "package": "github.com/valyala/bytebufferpool",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/valyala/bytebufferpool/LICENSE",
+      "evidence_sha256": "c4c2923938be3bf985290743398835cb6097d277663eeb1addec34b4df28d806"
+    },
+    {
+      "package": "github.com/vbauerster/mpb/v8",
+      "detected_license": "Unlicense",
+      "license": "Unlicense",
+      "evidence": "vendor/github.com/vbauerster/mpb/v8/UNLICENSE",
+      "evidence_sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    {
+      "package": "github.com/xdg/scram",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/xdg/scram/LICENSE",
+      "evidence_sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "package": "github.com/xdg/stringprep",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/github.com/xdg/stringprep/LICENSE",
+      "evidence_sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "package": "github.com/zeebo/errs",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/github.com/zeebo/errs/LICENSE",
+      "evidence_sha256": "c5c82acbbb56f625b57a5a15c83662b444caca8be37323c7e56e06b7e06fa293"
+    },
+    {
+      "package": "github.com/zeebo/xxh3",
+      "detected_license": "BSD-2-Clause",
+      "license": "BSD-2-Clause",
+      "evidence": "vendor/github.com/zeebo/xxh3/LICENSE",
+      "evidence_sha256": "cc347497d766f469091ce91cb17cb927a286dcd76b075a9d75496bf4375af4b3"
+    },
+    {
+      "package": "go.etcd.io/etcd/api/v3",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.etcd.io/etcd/api/v3/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "go.etcd.io/etcd/client/pkg/v3",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.etcd.io/etcd/client/pkg/v3/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "go.etcd.io/etcd/client/v3",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.etcd.io/etcd/client/v3/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "go.mongodb.org/mongo-driver",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.mongodb.org/mongo-driver/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/auto/sdk",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/auto/sdk/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/contrib/detectors/gcp",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/contrib/detectors/gcp/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/otel",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/otel/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/otel/metric",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/otel/metric/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/otel/sdk",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/otel/sdk/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/otel/sdk/metric",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/otel/sdk/metric/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.opentelemetry.io/otel/trace",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/go.opentelemetry.io/otel/trace/LICENSE",
+      "evidence_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "package": "go.uber.org/atomic",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/go.uber.org/atomic/LICENSE.txt",
+      "evidence_sha256": "edbb5a4d165ac69376c765b551c0662ff42bea87e1f1eda85f42ac90c34b09d0"
+    },
+    {
+      "package": "go.uber.org/multierr",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/go.uber.org/multierr/LICENSE.txt",
+      "evidence_sha256": "dcdabe03bef2382a130640d1c3a4cd5ec42aba1035095c38272fde694eb72405"
+    },
+    {
+      "package": "go.uber.org/zap",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/go.uber.org/zap/LICENSE",
+      "evidence_sha256": "7de716e70addb64f9305298ef32a9dd68e40d5b3095a5d868ba4461404dbfbcf"
+    },
+    {
+      "package": "goftp.io/server/v2",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/goftp.io/server/v2/LICENSE",
+      "evidence_sha256": "b283cb4c679f7d14cf4245ec7d6cdb78c340064328c86c596b2f6be09cd61670"
+    },
+    {
+      "package": "golang.org/x/crypto",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/crypto/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "golang.org/x/net",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/net/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "golang.org/x/oauth2",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/oauth2/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "golang.org/x/sync",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/sync/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "golang.org/x/sys",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/sys/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "golang.org/x/term",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/term/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "golang.org/x/text",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/text/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "golang.org/x/time/rate",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/golang.org/x/time/LICENSE",
+      "evidence_sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+    },
+    {
+      "package": "google.golang.org/api",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/google.golang.org/api/LICENSE",
+      "evidence_sha256": "110244b02140866ee37d17fa7449436a377ec3b85a481fbb208f4c87964382de"
+    },
+    {
+      "package": "google.golang.org/api/internal/third_party/uritemplates",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/google.golang.org/api/internal/third_party/uritemplates/LICENSE",
+      "evidence_sha256": "fc0a2f71df4e8f047902da53d1f85301be43e0f360fc167057a2d04658ed2ba9"
+    },
+    {
+      "package": "google.golang.org/genproto/googleapis/api",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/google.golang.org/genproto/googleapis/api/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "google.golang.org/genproto/googleapis/rpc",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/google.golang.org/genproto/googleapis/rpc/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "google.golang.org/genproto/googleapis/type",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/google.golang.org/genproto/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "google.golang.org/grpc",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/google.golang.org/grpc/LICENSE",
+      "evidence_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "package": "google.golang.org/protobuf",
+      "detected_license": "BSD-3-Clause",
+      "license": "BSD-3-Clause",
+      "evidence": "vendor/google.golang.org/protobuf/LICENSE",
+      "evidence_sha256": "4835612df0098ca95f8e7d9e3bffcb02358d435dbb38057c844c99d7f725eb20"
+    },
+    {
+      "package": "gopkg.in/yaml.v2",
+      "detected_license": "Apache-2.0",
+      "license": "Apache-2.0",
+      "evidence": "vendor/gopkg.in/yaml.v2/LICENSE",
+      "evidence_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "package": "gopkg.in/yaml.v3",
+      "detected_license": "MIT",
+      "license": "MIT",
+      "evidence": "vendor/gopkg.in/yaml.v3/LICENSE",
+      "evidence_sha256": "d18f6323b71b0b768bb5e9616e36da390fbd39369a81807cca352de4e4e6aa0b"
+    }
+  ],
+  "go_mod_sha256": "e362dbf17ddb50992fe199e0d777b3da147ec398e6db9e590fef2a573060acb1",
+  "go_sum_sha256": "e81f196b31076aa8928bcf74456d1a9c20113aca174089bc5c7d0642de3b316f"
+}

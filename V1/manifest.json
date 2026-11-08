@@ -1,0 +1,1098 @@
+{
+  "generatedAt": "2026-11-08T13:04:15Z",
+  "packages": [
+    {
+      "category": "web",
+      "id": "adminer",
+      "name": "AdminerEvo",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "php",
+              "role": "web",
+              "url": "https://github.com/adminerevo/adminerevo/releases/download/v4.8.4/adminer-4.8.4.php"
+            }
+          ],
+          "published": true,
+          "version": "4.8.4"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "bun",
+      "name": "bun",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "tool",
+              "sha256": "c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc510",
+              "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
+            }
+          ],
+          "published": true,
+          "version": "1.4.4"
+        }
+      ]
+    },
+    {
+      "category": "browser",
+      "id": "chromium",
+      "name": "chromium",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "browser",
+              "url": "https://cdn.playwright.dev/builds/cft/156.0.8078.4/mac-arm64/chrome-mac-arm64.zip"
+            }
+          ],
+          "minimumMacOS": "14.0",
+          "published": true,
+          "version": "156.0.8078.4"
+        }
+      ]
+    },
+    {
+      "category": "browser",
+      "id": "chromium-headless-shell",
+      "name": "chromium-headless-shell",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "browser",
+              "url": "https://cdn.playwright.dev/builds/cft/156.0.8078.4/mac-arm64/chrome-headless-shell-mac-arm64.zip"
+            }
+          ],
+          "minimumMacOS": "14.0",
+          "published": true,
+          "version": "156.0.8078.4"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "claude",
+      "name": "claude",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "binary",
+              "role": "tool",
+              "sha256": "64c327e92b2c5e0f78c0a980c5a518121e1f0d140ca771ca5dd4488d1a2dcb3f",
+              "url": "https://downloads.claude.ai/claude-code-releases/2.1.316/darwin-arm64/claude"
+            }
+          ],
+          "published": true,
+          "version": "2.1.316"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "codex",
+      "name": "Codex",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "tool",
+              "sha256": "c48824462fc57681eafb0925d97b11b589010475613904f570b42fea53e240d5",
+              "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-aarch64-apple-darwin.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "0.166.0"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "codex-code-mode-host",
+      "name": "codex-code-mode-host",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "tool",
+              "sha256": "7abd50fe5f033495a7b693c45fb82dc57093a18f1c4ba3e8043577de46c5c7c5",
+              "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-code-mode-host-aarch64-apple-darwin.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "0.166.0"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "composer",
+      "name": "Composer",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "phar",
+              "role": "tool",
+              "url": "https://getcomposer.org/download/2.11.1/composer.phar"
+            }
+          ],
+          "license": "MIT",
+          "published": true,
+          "version": "2.11.1"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "expose",
+      "name": "Expose",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "phar",
+              "role": "tool",
+              "url": "https://github.com/beyondcode/expose/raw/master/builds/expose"
+            }
+          ],
+          "published": true,
+          "version": "upstream"
+        }
+      ]
+    },
+    {
+      "category": "browser",
+      "id": "ffmpeg",
+      "name": "ffmpeg",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "browser",
+              "url": "https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-mac-arm64.zip"
+            }
+          ],
+          "minimumMacOS": "14.0",
+          "published": true,
+          "version": "1013"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "fsevents",
+      "name": "fsevents",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "format": "npm",
+              "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
+              "role": "package",
+              "url": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+            }
+          ],
+          "license": "MIT",
+          "published": true,
+          "version": "2.3.2"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "gh",
+      "name": "gh",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "tool",
+              "sha256": "d700207eae9ae98fe2b89535c2c087c07823d4628c56364695a5a07ef311c062",
+              "url": "https://github.com/cli/cli/releases/download/v2.103.3/gh_2.103.3_macOS_arm64.zip"
+            }
+          ],
+          "published": true,
+          "version": "2.103.3"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "laravel-installer",
+      "name": "laravel/installer",
+      "providerURL": "https://repo.packagist.org/p2/laravel/installer.json",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "composer",
+              "role": "package",
+              "url": "https://api.github.com/repos/laravel/installer/zipball/6d47ce9f44a42da0d06d50acdfa80f8c9b13c8c3"
+            }
+          ],
+          "published": true,
+          "version": "5.32.0"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "mariadb",
+      "name": "mariadb",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "10bbc34b181d73b975ea7573e13e99e1646162edc2269d19e698aa5216a1966e",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-11.8.3-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "GPL-2.0-only",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-11.8.3-sources.tar.gz",
+          "version": "11.8.3"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "c32e1a120f73f96f3828ec64a11de405179507a8f2e9f54cabab1a2ef80c7134",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-10.11.14-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "GPL-2.0-only",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-10.11.14-sources.tar.gz",
+          "version": "10.11.14"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "meilisearch",
+      "name": "meilisearch",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "binary",
+              "role": "server",
+              "url": "https://github.com/meilisearch/meilisearch/releases/download/v1.16.0/meilisearch-macos-apple-silicon"
+            }
+          ],
+          "minimumMacOS": "14.0",
+          "published": true,
+          "version": "1.16.0"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "minio",
+      "name": "minio",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "b82abda2b282a579c5b85c4f91827f78c2113278da4063606644e12946adca3e",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/minio-RELEASE.2025-09-07-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "AGPL-3.0-only",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/minio-RELEASE.2025-09-07-sources.tar.gz",
+          "version": "RELEASE.2025-09-07"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "mongodb",
+      "name": "mongodb",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "stripComponents": 1,
+              "url": "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-7.0.21.tgz"
+            }
+          ],
+          "minimumMacOS": "14.0",
+          "published": true,
+          "version": "7.0.21"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "mysql",
+      "name": "mysql",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "stripComponents": 1,
+              "url": "https://cdn.mysql.com/archives/mysql-9.4/mysql-9.4.0-macos15-arm64.tar.gz"
+            }
+          ],
+          "minimumMacOS": "15.0",
+          "published": true,
+          "version": "9.4.0"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "stripComponents": 1,
+              "url": "https://cdn.mysql.com/archives/mysql-8.4/mysql-8.4.6-macos15-arm64.tar.gz"
+            }
+          ],
+          "minimumMacOS": "15.0",
+          "published": true,
+          "version": "8.4.6"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "stripComponents": 1,
+              "url": "https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.43-macos15-arm64.tar.gz"
+            }
+          ],
+          "minimumMacOS": "15.0",
+          "published": true,
+          "version": "8.0.43"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "nginx",
+      "name": "nginx",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "bf92c1453b53d226b770f88b11dd09ac536c283b9ad056871bc65c9f977ac710",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/nginx-1.28.0-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "BSD-2-Clause",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "1.28.0"
+        }
+      ]
+    },
+    {
+      "category": "runtime",
+      "id": "node",
+      "name": "Node.js",
+      "providerURL": "https://nodejs.org/dist/index.json",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v24.22.2/node-v24.22.2-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "24.22.2"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v22.23.4/node-v22.23.4-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "22.23.4"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v20.20.2/node-v20.20.2-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "20.20.2"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v18.20.8/node-v18.20.8-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "18.20.8"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "runtime",
+              "url": "https://nodejs.org/dist/v16.20.2/node-v16.20.2-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "16.20.2"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "nvm",
+      "name": "nvm",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "tool",
+              "url": "https://github.com/nvm-sh/nvm/archive/refs/tags/v0.40.3.tar.gz"
+            }
+          ],
+          "license": "MIT",
+          "published": true,
+          "version": "0.40.3"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "opencode",
+      "name": "opencode",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "tool",
+              "sha256": "c1c9e62521192192ef4c3ed1355ada2144055bddb61682217e997b03c55203c1",
+              "url": "https://github.com/anomalyco/opencode/releases/download/v1.19.5/opencode-darwin-arm64.zip"
+            }
+          ],
+          "published": true,
+          "version": "1.19.5"
+        }
+      ]
+    },
+    {
+      "category": "runtime",
+      "id": "php",
+      "name": "PHP",
+      "providerURL": "https://dl.static-php.dev/static-php-cli/bulk/?format=json",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-cli-macos-aarch64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-fpm-macos-aarch64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "8.5.8"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.23-cli-macos-aarch64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.23-fpm-macos-aarch64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "8.4.23"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.3.32-cli-macos-aarch64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.3.32-fpm-macos-aarch64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "8.3.32"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.2.32-cli-macos-aarch64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.2.32-fpm-macos-aarch64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "8.2.32"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.1.34-cli-macos-aarch64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.1.34-fpm-macos-aarch64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "8.1.34"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "cli",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.0.30-cli-macos-aarch64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "fpm",
+              "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.0.30-fpm-macos-aarch64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "8.0.30"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "playwright",
+      "name": "playwright",
+      "providerURL": "https://registry.npmjs.org/playwright",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "npm",
+              "integrity": "sha512-HCrVhHr5QQuwYoswEUGTb7gGp522yflbv/ST8nF4sFWGuLjQCt17Q/EubpGGSNKYn1tsTCPZxqHhHCfVURu7UA==",
+              "role": "package",
+              "url": "https://registry.npmjs.org/playwright/-/playwright-1.64.1.tgz"
+            }
+          ],
+          "license": "Apache-2.0",
+          "published": true,
+          "version": "1.64.1"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "playwright-core",
+      "name": "Playwright core",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "format": "npm",
+              "integrity": "sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==",
+              "role": "package",
+              "url": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.64.1.tgz"
+            }
+          ],
+          "license": "Apache-2.0",
+          "published": true,
+          "version": "1.64.1"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "pnpm",
+      "name": "pnpm",
+      "providerURL": "https://registry.npmjs.org/pnpm",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "npm",
+              "integrity": "sha512-nXiC1dyCFH7PxOBiqjSDTgrQKWcQoYN6ERWuASEn02txCeMhrBWYod0KZVl2gbHpmRfhLtDXSerpEYeUM2O+sw==",
+              "role": "package",
+              "url": "https://registry.npmjs.org/pnpm/-/pnpm-12.18.0.tgz"
+            }
+          ],
+          "license": "MIT",
+          "published": true,
+          "version": "12.18.0"
+        },
+        {
+          "downloads": [
+            {
+              "format": "npm",
+              "integrity": "sha512-CR0d7nknV1Zhsl2rPCrjHK/BxU1rce1qZgDPDByxBDSkR+rhQBXxsj4ua+3u1535SpMuIWTSgyKA3OP7MvZW0Q==",
+              "role": "package",
+              "url": "https://registry.npmjs.org/pnpm/-/pnpm-12.16.1.tgz"
+            }
+          ],
+          "license": "MIT",
+          "published": true,
+          "version": "12.16.1"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "postgresql",
+      "name": "postgresql",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "5c7ce4ef2eabace91f123d87fb959aa43f3f3d83e11e2067bf2eb2ae802e26d7",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-18.0-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "PostgreSQL",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "18.0"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "8a4df813b580767a6e25db07ead9a43fefe4f318d0002906c2c146b3ddb52e70",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-17.6-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "PostgreSQL",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "17.6"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "0c7af7229173d4107df2531518b06a7730040acc7ee1a4c909e826fdf2f1b9a6",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-16.10-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "PostgreSQL",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "16.10"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "e166b0625ec92bc4eadd9dcb6cf1a3c1008a9958aaba4e5ae3e92317636df950",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-15.14-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "PostgreSQL",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "15.14"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "a01abf5ee49ae06c21cfa1edddd7aeb95b1b685c6e99e806f66106374313d2f8",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-14.19-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "PostgreSQL",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "14.19"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "python",
+      "name": "python",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "tool",
+              "sha256": "353d5f1b4fd2715e7053f12f068435d5bbad16b91e057006b5d01e0925709a7e",
+              "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261026/cpython-3.12.16%2B20261026-aarch64-apple-darwin-install_only_stripped.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "3.12.16"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "redis",
+      "name": "redis",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "937d0f12d855d9d1d272f3bd858794eac8581c7d4a064667b5db48b887234c70",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/redis-7.4.5-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "SSPL-1.0",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/redis-7.4.5-sources.tar.gz",
+          "version": "7.4.5"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "ee1687670d95a1764f31db59e89e1f0a936a042d62e4eed04a03768beb7767ca",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/redis-7.0.15-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "BSD-3-Clause",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "7.0.15"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "reverb",
+      "name": "laravel/reverb",
+      "providerURL": "https://repo.packagist.org/p2/laravel/reverb.json",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "composer",
+              "role": "package",
+              "url": "https://api.github.com/repos/laravel/reverb/zipball/e233471f53641a447d3b7a2150446d47a0e8c043"
+            }
+          ],
+          "published": true,
+          "version": "1.12.0"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "rustfs",
+      "name": "rustfs",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "server",
+              "stripComponents": 0,
+              "url": "https://dl.rustfs.com/artifacts/rustfs/release/rustfs-macos-aarch64-latest.zip"
+            }
+          ],
+          "minimumMacOS": "14.0",
+          "published": true,
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "category": "extension",
+      "id": "spx",
+      "name": "SPX",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "php-8.4",
+              "sha256": "4bdb2e6f6de4e0fcfe2149f53d133e3d9695b8473b518ffcea282e757c0e44d9",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.4-nts-mac-clang.zip"
+            }
+          ],
+          "published": true,
+          "version": "0.4.22"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "typesense",
+      "name": "Typesense",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "stripComponents": 0,
+              "url": "https://dl.typesense.org/releases/30.1/typesense-server-30.1-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "30.1"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "stripComponents": 0,
+              "url": "https://dl.typesense.org/releases/29.0/typesense-server-29.0-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "29.0"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "stripComponents": 0,
+              "url": "https://dl.typesense.org/releases/28.0/typesense-server-28.0-darwin-arm64.tar.gz"
+            }
+          ],
+          "published": true,
+          "version": "28.0"
+        }
+      ]
+    },
+    {
+      "category": "service",
+      "id": "valkey",
+      "name": "valkey",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "5fc7f776c3b90956faffc4ef8137d21aafc62bbe57fd99e6c6b11605c8d537f1",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/valkey-8.1.3-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "BSD-3-Clause",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "8.1.3"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "9f00c6280e7f0cac7fd782587a85b75d2f1042e355975ba65442d53b21bad539",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/valkey-8.0.4-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "BSD-3-Clause",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "8.0.4"
+        },
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "server",
+              "sha256": "421d7f077124865c0200887f9dee9e35b199aa4229311afd4e758cdf45db74de",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/valkey-7.2.10-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "BSD-3-Clause",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "7.2.10"
+        }
+      ]
+    },
+    {
+      "category": "extension",
+      "id": "xdebug",
+      "name": "Xdebug for PHP 8.4",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "php-8.4",
+              "sha256": "f530bf6214d6568a02d1f22be9acdc3970afbbdf6fa2a7612346aba3ca611609",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/xdebug-3.5.3-macos-arm64.tar.gz"
+            }
+          ],
+          "license": "LicenseRef-Xdebug-1.03",
+          "minimumMacOS": "14.0",
+          "published": false,
+          "version": "3.5.3"
+        }
+      ]
+    },
+    {
+      "category": "tool",
+      "id": "yarn",
+      "name": "yarn",
+      "providerURL": "https://registry.npmjs.org/yarn",
+      "releases": [
+        {
+          "downloads": [
+            {
+              "architecture": "arm64",
+              "format": "npm",
+              "integrity": "sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==",
+              "role": "package",
+              "url": "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz"
+            }
+          ],
+          "license": "BSD-2-Clause",
+          "published": true,
+          "version": "1.22.22"
+        }
+      ]
+    }
+  ],
+  "revision": 4,
+  "schema": 1
+}
