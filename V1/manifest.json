@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T14:44:39Z",
+  "generatedAt": "2026-11-12T16:55:21Z",
   "packages": [
     {
       "category": "web",
@@ -1093,7 +1093,7 @@
     {
       "category": "extension",
       "id": "xdebug",
-      "name": "Xdebug for PHP 8.4",
+      "name": "Xdebug",
       "releases": [
         {
           "downloads": [
@@ -1101,9 +1101,49 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "php-8.4",
-              "sha256": "f530bf6214d6568a02d1f22be9acdc3970afbbdf6fa2a7612346aba3ca611609",
+              "sha256": "a11c8d3571b8f132d45c4fead4dfcfd7eb10510a9a781e317b9f0e33da74fa2e",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/xdebug-3.5.3-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r2/xdebug-3.5.3-macos-arm64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "php-8.0",
+              "sha256": "a8b024b27727f30e17fe8ce0ac2e37b60653f95550537409729d7ec8df8251b2",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r2/xdebug-3.5.3-php-8.0-macos-arm64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "php-8.1",
+              "sha256": "808249c59d843470c73f763126d3c6b2c2a61eb17e9606b5a62fbe8651f8853c",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r2/xdebug-3.5.3-php-8.1-macos-arm64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "php-8.2",
+              "sha256": "eab6a65bf46f8fdb5e495e2efe37e7201ebcb483b7a48c2ed2bf53baa91a68ef",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r2/xdebug-3.5.3-php-8.2-macos-arm64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "php-8.3",
+              "sha256": "dc9c0e0ff030031e28f31e294380411d4be352ef08fccf68271d369bb49e81b3",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r2/xdebug-3.5.3-php-8.3-macos-arm64.tar.gz"
+            },
+            {
+              "architecture": "arm64",
+              "format": "tar-gz",
+              "role": "php-8.5",
+              "sha256": "ced8823e0f57ac3a5d0c8f69097d7203f0bb9615ba02d83b7a7081a8c6bfb4bd",
+              "stripComponents": 0,
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r2/xdebug-3.5.3-php-8.5-macos-arm64.tar.gz"
             }
           ],
           "license": "LicenseRef-Xdebug-1.03",
@@ -1136,6 +1176,6 @@
       ]
     }
   ],
-  "revision": 10,
+  "revision": 11,
   "schema": 1
 }

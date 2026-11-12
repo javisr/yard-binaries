@@ -9,8 +9,8 @@ applies only to the enumerated build and packaging recipes, never to third-party
 
 [Download the service packages](https://github.com/javisr/yard-binaries/releases/tag/vendor-2026-11-12-r1).
 The release includes 14 binary packages, four required corresponding-source packages, checksums
-and dependency audit/catalog metadata. Xdebug 3.5.3 for PHP 8.4 was not rebuilt for this release:
-its ad hoc signed package remains in `vendor-2026-11-08-r1`. Other managed downloads remain at their providers' URLs
+and dependency audit/catalog metadata. Xdebug 3.5.3 for PHP 8.0–8.5 is published separately in
+[vendor-2026-11-12-r2](https://github.com/javisr/yard-binaries/releases/tag/vendor-2026-11-12-r2). Other managed downloads remain at their providers' URLs
 in [V1/manifest.json](V1/manifest.json).
 
 Every executable and library in these packages is signed with Yard's Developer ID Application
