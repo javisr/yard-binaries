@@ -43,6 +43,7 @@ def generate(args):
     if args.release_dir:
         prepared = {p["product"]: p for p in json.loads((args.release_dir / "audit.json").read_text())["products"]}
     by_id = {package["id"]: package for package in packages}
+    extension_releases = {}
     for product in products:
         package = by_id.setdefault(product["type"], {"id": product["type"], "name": product["type"], "category": "service", "releases": []})
         identity = product["id"]
@@ -62,7 +63,8 @@ def generate(args):
             release["sourceURL"] = args.base_url.rstrip("/") + "/" + source
         if product["type"] == "xdebug":
             package["category"] = "extension"
-            release["downloads"][0]["role"] = "php-8.4"
+            package["name"] = "Xdebug"
+            release["downloads"][0]["role"] = "php-" + pathlib.PurePosixPath(product["payload"]).name
         if artifact.get("sha256"):
             release["downloads"][0]["sha256"] = artifact["sha256"]
         if published:
@@ -82,6 +84,15 @@ def generate(args):
                         checksum.update(chunk)
                     if checksum.hexdigest() != expected:
                         raise ValueError("published asset does not match the prepared bytes: " + url)
+        if product["type"] == "xdebug":
+            key = (product["type"], release["version"])
+            if key in extension_releases:
+                combined = extension_releases[key]
+                combined["downloads"] += release["downloads"]
+                combined["published"] = combined["published"] and release["published"]
+                release = combined
+            else:
+                extension_releases[key] = release
         package["releases"] = [r for r in package["releases"] if r["version"] != release["version"]] + [release]
     manifest = {"schema": 1, "revision": args.revision,
                 "generatedAt": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -108,7 +119,7 @@ def main():
     parser.add_argument("--release-dir", type=pathlib.Path)
     parser.add_argument("--output", type=pathlib.Path, default=RESOURCE)
     parser.add_argument("--revision", type=int, required=True)
-    parser.add_argument("--base-url", default="https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1")
+    parser.add_argument("--base-url", default="https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1")
     parser.add_argument("--published", action="store_true", help="Verify already published assets before marking them available")
     parser.add_argument("--validate-installable", action="store_true", help="Require all compiled optional service versions to have published verified downloads")
     args = parser.parse_args()

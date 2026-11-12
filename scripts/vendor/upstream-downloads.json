@@ -14,7 +14,8 @@
               "role": "web",
               "url": "https://github.com/adminerevo/adminerevo/releases/download/v4.8.4/adminer-4.8.4.php",
               "format": "php",
-              "architecture": "arm64"
+              "architecture": "arm64",
+              "sha256": "e9a9bc2cc2ac46d6d92f008de9379d2b21a3764a5f8956ed68456e190814b149"
             }
           ]
         }
@@ -157,25 +158,6 @@
             }
           ],
           "license": "MIT"
-        }
-      ]
-    },
-    {
-      "id": "expose",
-      "name": "Expose",
-      "category": "tool",
-      "releases": [
-        {
-          "version": "upstream",
-          "published": true,
-          "downloads": [
-            {
-              "role": "tool",
-              "url": "https://github.com/beyondcode/expose/raw/master/builds/expose",
-              "format": "phar",
-              "architecture": "arm64"
-            }
-          ]
         }
       ]
     },
@@ -346,6 +328,29 @@
             }
           ],
           "minimumMacOS": "15.0"
+        }
+      ]
+    },
+    {
+      "id": "ngrok",
+      "name": "ngrok",
+      "category": "tool",
+      "providerURL": "https://ngrok.com/download/mac-os",
+      "releases": [
+        {
+          "version": "3.39.13",
+          "published": true,
+          "minimumMacOS": "14.0",
+          "license": "Proprietary (https://ngrok.com/tos)",
+          "downloads": [
+            {
+              "role": "tool",
+              "url": "https://bin.ngrok.com/c/bNyj1mQVY4c/ngrok-v3-3.39.13-darwin-arm64.zip",
+              "format": "zip",
+              "architecture": "arm64",
+              "sha256": "514967480546b968e87e9ec47efd513ce5012e11000957f9696a05c73b05b908"
+            }
+          ]
         }
       ]
     },
@@ -696,18 +701,21 @@
       "category": "service",
       "releases": [
         {
-          "version": "1.0.0",
+          "version": "1.0.4",
           "published": true,
           "downloads": [
             {
               "role": "server",
-              "url": "https://dl.rustfs.com/artifacts/rustfs/release/rustfs-macos-aarch64-latest.zip",
+              "url": "https://github.com/rustfs/rustfs/releases/download/1.0.4/rustfs-macos-aarch64-v1.0.4.zip",
               "format": "zip",
               "architecture": "arm64",
-              "stripComponents": 0
+              "stripComponents": 0,
+              "sha256": "49057482769d7904ef95dc40457d71122f48cbb8e9e0725a0817a3ec6daf8270"
             }
           ],
-          "minimumMacOS": "14.0"
+          "minimumMacOS": "14.0",
+          "license": "Apache-2.0",
+          "sourceURL": "https://github.com/rustfs/rustfs/archive/refs/tags/1.0.4.tar.gz"
         }
       ]
     },
@@ -717,17 +725,52 @@
       "category": "extension",
       "releases": [
         {
-          "version": "0.4.22",
-          "published": true,
           "downloads": [
             {
-              "role": "php-8.4",
-              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.4-nts-mac-clang.zip",
-              "format": "zip",
               "architecture": "arm64",
-              "sha256": "4bdb2e6f6de4e0fcfe2149f53d133e3d9695b8473b518ffcea282e757c0e44d9"
+              "format": "zip",
+              "role": "php-8.5",
+              "sha256": "e5708a36589192fc8799f7bdc9b139e604b540646af41529613b9d5c3c8360d4",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.5-nts-mac-clang.zip"
+            },
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "php-8.4",
+              "sha256": "4bdb2e6f6de4e0fcfe2149f53d133e3d9695b8473b518ffcea282e757c0e44d9",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.4-nts-mac-clang.zip"
+            },
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "php-8.3",
+              "sha256": "7a043502ab5d302dd0bbca09e67f4bcf825bb9afa4aa8a9b1986e1e586d1c9cc",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.3-nts-mac-clang.zip"
+            },
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "php-8.2",
+              "sha256": "6e591a579bedee5280924c004ad1eba2be3c56a8bf558fe17361ed9df24a6177",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.2-nts-mac-clang.zip"
+            },
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "php-8.1",
+              "sha256": "95bccf28aa15e792430f37e86e6e54e2491215f3a7424d77eb552a24208361f5",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.1-nts-mac-clang.zip"
+            },
+            {
+              "architecture": "arm64",
+              "format": "zip",
+              "role": "php-8.0",
+              "sha256": "4786295d4184fc47651198702ce2918b528a5150e878ddc022997f77ee39a589",
+              "url": "https://github.com/NoiseByNorthwest/php-spx/releases/download/v0.4.22/spx-php-8.0-nts-mac-clang.zip"
             }
-          ]
+          ],
+          "published": true,
+          "version": "0.4.22"
         }
       ]
     },

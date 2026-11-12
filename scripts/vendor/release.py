@@ -138,7 +138,7 @@ def extract(archive, destination):
 
 def recipes():
     return sorted([*HERE.glob("*.sh"), HERE / "release.py", HERE / "download-manifest.py",
-                   HERE / "verify-php-extensions.py", LOCK, HERE / "minio-licenses.json", HERE / "upstream-downloads.json",
+                   HERE / "verify-php-extensions.py", HERE / "build-php-extensions.py", HERE / "php80-runtime.py", HERE / "verify-php-runtimes.py", LOCK, HERE / "minio-licenses.json", HERE / "upstream-downloads.json",
                    HERE / "LICENSE.build-recipes", HERE / "README.downloads.md"])
 
 
@@ -150,7 +150,7 @@ def build_recipe_hashes(product):
     groups = {"nginx": ["nginx.sh"], "redis": ["redis.sh"], "valkey": ["redis.sh"],
               "postgresql": ["postgresql.sh", "openssl.sh"],
               "mariadb": ["mariadb.sh", "mariadb-tls.sh", "tools.sh"],
-              "xdebug": ["php-extensions.sh", "verify-php-extensions.py"],
+              "xdebug": ["php-extensions.sh", "build-php-extensions.py", "verify-php-extensions.py", "php80-runtime.py", "verify-php-runtimes.py"],
               "minio": ["minio.sh", "tools.sh", "minio-licenses.json"]}
     return {name: sha(HERE / name) for name in ["common.sh"] + groups[product["type"]]}
 
@@ -361,6 +361,132 @@ def receipt_command(args, lock):
     write(args.work / "receipts" / (args.product + ".json"), receipt)
 
 
+# nginx is built with PCRE JIT, which needs MAP_JIT under the hardened runtime.
+JIT_ENTITLEMENTS = """<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>com.apple.security.cs.allow-jit</key><true/>
+</dict>
+</plist>
+"""
+
+
+def payload_files(payload):
+    if payload.is_file():
+        return {payload.name: {"sha256": sha(payload), "mode": payload.stat().st_mode & 0o777}}
+    return inventory(payload)
+
+
+def macho_files(payload):
+    candidates = [payload] if payload.is_file() else sorted(payload.rglob("*"), key=lambda p: (-len(p.parts), str(p)))
+    found = []
+    for path in candidates:
+        if path.is_symlink() or not path.is_file():
+            continue
+        with path.open("rb") as stream:
+            if stream.read(4) in MAGICS:
+                found.append(path)
+    return found
+
+
+def signature(path):
+    """Developer ID team and hardened-runtime state of one signed Mach-O file."""
+    run(["/usr/bin/codesign", "--verify", "--strict", path], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    details = subprocess.run(["/usr/bin/codesign", "-dvv", str(path)], check=True, text=True, capture_output=True).stderr
+    authority = next((l.split("=", 1)[1] for l in details.splitlines() if l.startswith("Authority=")), "")
+    team = next((l.split("=", 1)[1] for l in details.splitlines() if l.startswith("TeamIdentifier=")), "")
+    directory = next((l for l in details.splitlines() if l.startswith("CodeDirectory")), "")
+    timestamp = any(l.startswith("Timestamp=") for l in details.splitlines())
+    return {"authority": authority, "team": team, "hardened_runtime": "runtime" in directory, "timestamp": timestamp}
+
+
+def require_developer_id(path, team=None):
+    found = signature(path)
+    if (not found["authority"].startswith("Developer ID Application:") or not found["hardened_runtime"]
+            or not found["timestamp"] or not re.fullmatch(r"[A-Z0-9]{10}", found["team"]) or (team and found["team"] != team)):
+        raise ReleaseError("not Developer ID signed with hardened runtime and timestamp: " + str(path))
+    return found
+
+
+def notarize(payload, product, profile):
+    """Apple accepts only archives; tickets cannot be stapled to bare executables, so Gatekeeper checks online."""
+    with tempfile.TemporaryDirectory(prefix="yard-vendor-notary-") as temporary:
+        archive = pathlib.Path(temporary) / (product + ".zip")
+        run(["/usr/bin/ditto", "-c", "-k", "--keepParent", payload, archive])
+        result = subprocess.run(["/usr/bin/xcrun", "notarytool", "submit", str(archive), "--keychain-profile", profile,
+                                 "--wait", "--output-format", "json"], text=True, capture_output=True)
+        try:
+            submission = json.loads(result.stdout)
+        except ValueError:
+            raise ReleaseError("notarytool submit failed for " + product + ": " + result.stdout + result.stderr)
+        if submission.get("status") != "Accepted":
+            log = subprocess.run(["/usr/bin/xcrun", "notarytool", "log", submission.get("id", ""), "--keychain-profile", profile],
+                                 text=True, capture_output=True)
+            raise ReleaseError(f"notarization {submission.get('status')} for {product}: {log.stdout}{log.stderr}")
+    return {"id": submission["id"], "status": "Accepted"}
+
+
+def sign_command(args, lock):
+    """Re-sign verified build payloads for distribution; receipts keep the hashes as built."""
+    identity = os.environ.get("YARD_SIGN_IDENTITY", "")
+    if not identity or identity == "-":
+        raise ReleaseError("YARD_SIGN_IDENTITY must name a Developer ID Application identity.")
+    keychain = os.environ.get("YARD_SIGN_KEYCHAIN")
+    profile = os.environ.get("YARD_NOTARY_PROFILE")
+    wanted = set(args.products or [p["id"] for p in lock["products"]])
+    products = [p for p in lock["products"] if p["id"] in wanted]
+    if wanted != {p["id"] for p in products}:
+        raise ReleaseError("unknown products: " + ", ".join(wanted - {p["id"] for p in products}))
+    with tempfile.TemporaryDirectory(prefix="yard-vendor-sign-") as temporary:
+        entitlements = pathlib.Path(temporary) / "jit.entitlements"
+        entitlements.write_text(JIT_ENTITLEMENTS)
+        for product in products:
+            payload = product_payload(product, args.work)
+            receipt_path = args.work / "receipts" / (product["id"] + ".json")
+            if not receipt_path.exists() or not payload.exists():
+                raise ReleaseError("no verified build receipt or payload: " + product["id"])
+            receipt = read(receipt_path)
+            # Refuse to launder files that no longer match the bytes recorded when they were built.
+            if receipt.get("files") != payload_files(payload):
+                raise ReleaseError("build payload changed after the build receipt was recorded: " + product["id"])
+            binaries = macho_files(payload)
+            if not binaries:
+                raise ReleaseError("no Mach-O binaries in payload: " + product["id"])
+            record = receipt.get("signature")
+            if record is None:
+                for path in binaries:
+                    command = ["/usr/bin/codesign", "--force", "--timestamp", "--options", "runtime", "--sign", identity]
+                    if keychain:
+                        command += ["--keychain", keychain]
+                    if product["type"] == "nginx":
+                        command += ["--entitlements", entitlements]
+                    run(command + [path], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+                found = require_developer_id(binaries[0])
+                for path in binaries[1:]:
+                    require_developer_id(path, found["team"])
+                manifest = payload / "manifest.json" if payload.is_dir() else None
+                if product["type"] == "xdebug" and manifest and manifest.exists():
+                    # Yard verifies the extension payload manifest after extracting the download.
+                    extension = read(manifest)
+                    extension["files"] = {name: sha(payload / name) for name in extension["files"]}
+                    write(manifest, extension)
+                record = {"authority": found["authority"], "team": found["team"], "hardened_runtime": True,
+                          "entitlements": ["com.apple.security.cs.allow-jit"] if product["type"] == "nginx" else []}
+                receipt["unsigned_files"] = receipt["files"]
+                receipt["files"] = payload_files(payload)
+                receipt["signature"] = record
+                write(receipt_path, receipt)
+                print(f"Signed {len(binaries)} Mach-O files: {product['id']}")
+            else:
+                for path in binaries:
+                    require_developer_id(path, record["team"])
+            if profile and "notarization" not in record:
+                record["notarization"] = notarize(payload, product["id"], profile)
+                write(receipt_path, receipt)
+                print(f"Notarized {product['id']}: {record['notarization']['id']}")
+
+
 def prepare_command(args, lock):
     if args.base_url:
         url = urllib.parse.urlsplit(args.base_url)
@@ -447,6 +573,16 @@ def prepare_product(product, args, output, scratch, trees, archives, sources):
             actual = {payload.name: {"sha256": sha(payload), "mode": payload.stat().st_mode & 0o777}} if payload.is_file() else inventory(payload)
             if receipt.get("files") != actual:
                 report["blockers"].append("Build payload changed after the build receipt was recorded.")
+            elif getattr(args, "require_developer_id", False):
+                signed = receipt.get("signature") or {}
+                if signed.get("notarization", {}).get("status") != "Accepted":
+                    report["blockers"].append("Payload is not Developer ID signed and notarized; run release.py sign.")
+                else:
+                    try:
+                        for path in macho_files(payload):
+                            require_developer_id(path, signed["team"])
+                    except (ReleaseError, subprocess.CalledProcessError) as error:
+                        report["blockers"].append("Developer ID verification failed: " + str(error))
         if source_required:
             shutil.copy2(receipt_path, source_root / "BUILD-RECEIPT.json")
     if product["type"] == "minio":
@@ -565,11 +701,15 @@ def main():
     prepare.add_argument("--output", type=pathlib.Path, required=True)
     prepare.add_argument("--products", nargs="+")
     prepare.add_argument("--base-url", help="Immutable HTTPS release directory; embedded with source-download instructions")
+    prepare.add_argument("--require-developer-id", action="store_true",
+                         help="Block products that release.py sign has not Developer ID signed and notarized")
+    signing = sub.add_parser("sign", help="Developer ID sign (YARD_SIGN_IDENTITY) and notarize (YARD_NOTARY_PROFILE) built payloads")
+    signing.add_argument("--products", nargs="+")
     args = parser.parse_args()
     args.work = args.work.resolve()
     try:
         lock = read(LOCK)
-        {"source": source_command, "receipt": receipt_command, "prepare": prepare_command,
+        {"source": source_command, "receipt": receipt_command, "prepare": prepare_command, "sign": sign_command,
          "audit-go": audit_go_command}[args.command](args, lock)
     except (ReleaseError, OSError, ValueError, subprocess.CalledProcessError, tarfile.TarError) as error:
         parser.exit(1, str(error) + "\n")

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T10:33:23Z",
+  "generatedAt": "2026-11-12T14:44:39Z",
   "packages": [
     {
       "category": "web",
@@ -252,15 +252,15 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "10bbc34b181d73b975ea7573e13e99e1646162edc2269d19e698aa5216a1966e",
+              "sha256": "d4a2baa4c59c229cec4239fea17da214ef313efb858357387c83b4691085be92",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-11.8.3-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/mariadb-11.8.3-macos-arm64.tar.gz"
             }
           ],
           "license": "GPL-2.0-only",
           "minimumMacOS": "14.0",
           "published": true,
-          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-11.8.3-sources.tar.gz",
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/mariadb-11.8.3-sources.tar.gz",
           "version": "11.8.3"
         },
         {
@@ -269,15 +269,15 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "c32e1a120f73f96f3828ec64a11de405179507a8f2e9f54cabab1a2ef80c7134",
+              "sha256": "5ad4f6ea6f976f72e950fc86bec99cea6367af0d2fb9435b87a063c2d23c074f",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-10.11.14-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/mariadb-10.11.14-macos-arm64.tar.gz"
             }
           ],
           "license": "GPL-2.0-only",
           "minimumMacOS": "14.0",
           "published": true,
-          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/mariadb-10.11.14-sources.tar.gz",
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/mariadb-10.11.14-sources.tar.gz",
           "version": "10.11.14"
         }
       ]
@@ -313,15 +313,15 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "b82abda2b282a579c5b85c4f91827f78c2113278da4063606644e12946adca3e",
+              "sha256": "c5b2868fc17d8148ea5ce90d188768880dbadd0a04f7fa82a6e779027f598346",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/minio-RELEASE.2025-09-07-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/minio-RELEASE.2025-09-07-macos-arm64.tar.gz"
             }
           ],
           "license": "AGPL-3.0-only",
           "minimumMacOS": "14.0",
           "published": true,
-          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/minio-RELEASE.2025-09-07-sources.tar.gz",
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/minio-RELEASE.2025-09-07-sources.tar.gz",
           "version": "RELEASE.2025-09-07"
         }
       ]
@@ -407,9 +407,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "bf92c1453b53d226b770f88b11dd09ac536c283b9ad056871bc65c9f977ac710",
+              "sha256": "79bb65dbf5af394306f9404dd3adb0ce7fc269bd1d2c2e44547a719f7a12b485",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/nginx-1.28.0-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/nginx-1.28.0-macos-arm64.tar.gz"
             }
           ],
           "license": "BSD-2-Clause",
@@ -754,9 +754,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "5c7ce4ef2eabace91f123d87fb959aa43f3f3d83e11e2067bf2eb2ae802e26d7",
+              "sha256": "df456f5387c74e602a855bd5f9054f90dc5f74361b1396d2715154b6e4125af3",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-18.0-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/postgresql-18.0-macos-arm64.tar.gz"
             }
           ],
           "license": "PostgreSQL",
@@ -770,9 +770,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "8a4df813b580767a6e25db07ead9a43fefe4f318d0002906c2c146b3ddb52e70",
+              "sha256": "7dd60a41994d4a6764535bef123eb53a92fd9d159e0ff49620782a86c5447ea5",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-17.6-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/postgresql-17.6-macos-arm64.tar.gz"
             }
           ],
           "license": "PostgreSQL",
@@ -786,9 +786,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "0c7af7229173d4107df2531518b06a7730040acc7ee1a4c909e826fdf2f1b9a6",
+              "sha256": "7f962029ca03c8119b33b621392a0a69c8be9b62f22e369b5599090be6061713",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-16.10-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/postgresql-16.10-macos-arm64.tar.gz"
             }
           ],
           "license": "PostgreSQL",
@@ -802,9 +802,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "e166b0625ec92bc4eadd9dcb6cf1a3c1008a9958aaba4e5ae3e92317636df950",
+              "sha256": "0bc2caf3b2add3aa7a127236a9082191c17445e6dbca231084085ce6b9b8ee6c",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-15.14-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/postgresql-15.14-macos-arm64.tar.gz"
             }
           ],
           "license": "PostgreSQL",
@@ -818,9 +818,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "a01abf5ee49ae06c21cfa1edddd7aeb95b1b685c6e99e806f66106374313d2f8",
+              "sha256": "7af234cd409f41ccbc12d40139126a9d77f53eaaaa1c4d271f046a7020da3bf7",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/postgresql-14.19-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/postgresql-14.19-macos-arm64.tar.gz"
             }
           ],
           "license": "PostgreSQL",
@@ -861,15 +861,15 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "937d0f12d855d9d1d272f3bd858794eac8581c7d4a064667b5db48b887234c70",
+              "sha256": "37c783f787a18e205b1fb76175c2b67c0ab90301ffe03f4d4edf0c6ab55a9689",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/redis-7.4.5-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/redis-7.4.5-macos-arm64.tar.gz"
             }
           ],
           "license": "SSPL-1.0",
           "minimumMacOS": "14.0",
           "published": true,
-          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/redis-7.4.5-sources.tar.gz",
+          "sourceURL": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/redis-7.4.5-sources.tar.gz",
           "version": "7.4.5"
         },
         {
@@ -878,9 +878,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "ee1687670d95a1764f31db59e89e1f0a936a042d62e4eed04a03768beb7767ca",
+              "sha256": "0a010eebee80bc03c3523ab187efbdbb6d636cc912d2f10aad1bde1cc4dae96d",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/redis-7.0.15-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/redis-7.0.15-macos-arm64.tar.gz"
             }
           ],
           "license": "BSD-3-Clause",
@@ -1046,9 +1046,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "5fc7f776c3b90956faffc4ef8137d21aafc62bbe57fd99e6c6b11605c8d537f1",
+              "sha256": "cfd5e08d7412d8f60b6962b7eab8056da1a4fff779d36f610efbdbf721cb75a8",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/valkey-8.1.3-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/valkey-8.1.3-macos-arm64.tar.gz"
             }
           ],
           "license": "BSD-3-Clause",
@@ -1062,9 +1062,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "9f00c6280e7f0cac7fd782587a85b75d2f1042e355975ba65442d53b21bad539",
+              "sha256": "c6ed22b18448146e9ad5e0907d525de20d9868e7d80357b6af7cc936a6eff4ab",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/valkey-8.0.4-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/valkey-8.0.4-macos-arm64.tar.gz"
             }
           ],
           "license": "BSD-3-Clause",
@@ -1078,9 +1078,9 @@
               "architecture": "arm64",
               "format": "tar-gz",
               "role": "server",
-              "sha256": "421d7f077124865c0200887f9dee9e35b199aa4229311afd4e758cdf45db74de",
+              "sha256": "1f20d5200ca2fc42908870949f016591281af611079ce4104c0d0e3fd59add52",
               "stripComponents": 0,
-              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1/valkey-7.2.10-macos-arm64.tar.gz"
+              "url": "https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1/valkey-7.2.10-macos-arm64.tar.gz"
             }
           ],
           "license": "BSD-3-Clause",
@@ -1136,6 +1136,6 @@
       ]
     }
   ],
-  "revision": 9,
+  "revision": 10,
   "schema": 1
 }

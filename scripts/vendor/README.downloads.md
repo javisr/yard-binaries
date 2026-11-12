@@ -7,12 +7,19 @@ applies only to the enumerated build and packaging recipes, never to third-party
 
 ## Current downloads
 
-[Download the service packages](https://github.com/javisr/yard-binaries/releases/tag/vendor-2026-11-08-r1).
-The release includes 15 binary packages, four required corresponding-source packages, checksums
-and dependency audit/catalog metadata. Other managed downloads remain at their providers' URLs
+[Download the service packages](https://github.com/javisr/yard-binaries/releases/tag/vendor-2026-11-12-r1).
+The release includes 14 binary packages, four required corresponding-source packages, checksums
+and dependency audit/catalog metadata. Xdebug 3.5.3 for PHP 8.4 was not rebuilt for this release:
+its ad hoc signed package remains in `vendor-2026-11-08-r1`. Other managed downloads remain at their providers' URLs
 in [V1/manifest.json](V1/manifest.json).
 
-These initial binaries use ad hoc code signatures. They are not Developer ID signed or notarized.
+Every executable and library in these packages is signed with Yard's Developer ID Application
+certificate, uses the hardened runtime with a secure timestamp, and was accepted by Apple's notary
+service. Archives and bare executables cannot carry a stapled ticket, so Gatekeeper confirms the
+notarization online. nginx alone carries the `allow-jit` entitlement, for PCRE JIT. Each package's
+`BUILD-RECEIPT.json` records the signing team, the notarization submission and the hashes of the
+files as built, before signing. The earlier `vendor-2026-11-08-r1` release has the same builds with
+ad hoc signatures and remains available unchanged.
 Their arm64 and macOS 14 minimum-version metadata has been checked; execution on a real macOS 14
 machine has not yet been verified.
 
@@ -46,6 +53,15 @@ Extract the source package into an empty directory. Put `upstream/*.tar.gz` in
 ```sh
 bash scripts/vendor/build-all.sh mariadb
 python3 scripts/vendor/release.py prepare --output dist/vendor-release
+```
+
+Builds are ad hoc signed. To distribute them, sign and notarize with your own Developer ID before
+preparing the archives; receipts keep the hashes as built and bind the signed bytes:
+
+```sh
+YARD_SIGN_IDENTITY="Developer ID Application: … (TEAMID)" YARD_NOTARY_PROFILE=profile \
+  python3 scripts/vendor/release.py sign
+python3 scripts/vendor/release.py prepare --require-developer-id --output dist/vendor-release
 ```
 
 Select the service matching the source archive. PostgreSQL prepares its own static OpenSSL;
@@ -83,7 +99,7 @@ generate the published inventory with a new revision and verify the remote files
 
 ```sh
 python3 scripts/vendor/download-manifest.py --release-dir dist/vendor-release \
-  --revision 6 --output V1 --base-url https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-08-r1 --published
+  --revision 10 --output V1 --base-url https://github.com/javisr/yard-binaries/releases/download/vendor-2026-11-12-r1 --published
 ```
 
 Provider files remain hosted by their original publishers. npm/Composer/Playwright resolve their
@@ -108,8 +124,9 @@ grant rights to Yard's code or trademarks and do not imply endorsement by upstre
 Only products reported as `ready` in `audit.json` may enter `catalog.json` and receive a binary
 archive. Blocked products receive explicit reasons and source archives only if required by their
 license policy, never releasable binaries. Optional source links/checksums are omitted from catalogs.
-For a Developer ID signed/notarized release, complete signing and notarization before generating
-its final package hashes. Ad hoc signatures establish local integrity, not publisher identity.
+For a Developer ID signed/notarized release, run `release.py sign` before `prepare
+--require-developer-id`: signing changes the bytes, so it must precede the final package hashes.
+Ad hoc signatures establish local integrity, not publisher identity.
 Changing signatures requires a new release and new checksums; never replace existing assets.
 Publication and activation in Yard require reviewed, immutable download URLs and pinned hashes.
 No publishing or repository creation happens when running these build/preparation scripts.
